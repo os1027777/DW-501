@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="memo" type="text">
+    <input id="ap" type="text">
+    <input id="name" type="text">
+    <button onclick="test()">확인</button>
+
+    <h3>숫자 입력 받기</h3>
+    <input id="num" type="number">
+    <button onclick="test02()">확인</button>
+
+    <h3>주문 수량 받기</h3>
+    <input id="count" type="number">
+    <button onclick="test03()">주문</button>
+    <h3>메누 선택 하기</h3>
+    <select id="meu">
+        <option value="아메리카노">아메리카노</option>
+        <option value="원조커피">원조커피</option>
+        <option value="빽스치더">빽스치더</option>
+        <option value="연우랴때">연우랴때</option>
+    </select>
+    <button onclick="test04()">선택완료</button>
+    <button onclick="test05()">허</button>
+</body>
+<script>
+      function test(){
+        var memo = document.getElementById("name").value;
+        alert(name);
+      }
+    function test(){
+        //var 데이터 타입
+        var name = document.getElementById("memo").value;
+        //alert 알람창
+        alert(memo);
+    }
+       function test(){
+        var ap = document.getElementById("ap").value;
+        alert(ap);
+        }
+        function test02(){
+            var num = document.getElementById("num").value;
+            //if배우기
+            //만약에 넘이 10 이상 이라면
+            if(num >= 10){
+                alert('10 dltkd dlqslek!');
+            }
+                else{
+                    alert('10미만입니다!');
+                }
+            }
+            function test03(){
+                var count = document.getElementById("count").value
+                if(count >= 20){
+                    alert('죄송합니다 1인당 20개 미만으로 주문 가능합니다.')
+
+                }
+                else{
+                    alert('주문이 가능합니다')
+                }
+            }
+            function test04(){
+                var meu = document.getElementById("meu").value
+                if(meu == '원조커피'){
+                    alert('선택한 메뉴는' +meu);
+                }
+                alert(meu)
+                
+                var meu = document.getElementById("meu").value
+                if(meu == '빽스치더'){
+                    alert('죄송합니다' + meu + '는 품절입니다');
+                }
+            }
+
+        
+
+    
+
+</script>
+</html>

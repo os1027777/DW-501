@@ -1,0 +1,22 @@
+.animar p{
+    font-size: 12pt;
+    font-weight: 500;
+    text-shadow: none;
+}
+
+
+
+p{
+    font-size: 20pt;    /*글시크기*/
+    font-weight: 700;
+ 
+}
+    table tr td{
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+}
+hr{
+    margin-left: 0;
+    width: 700px;
+}

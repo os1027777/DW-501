@@ -1,0 +1,116 @@
+body div input button{
+    margin: 0;
+    padding: 0;
+}
+
+#mask{
+    width: 100%;
+    height: auto;
+    font-size: 12pt;
+    color: black;
+ 
+}
+#seaw{
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+   
+}
+#menuw{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-top: 2px solid darkblue;
+    border-bottom: 2px solid darkcyan;
+}
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+    height:auto;
+    margin-top: 20px;
+    background-color: aqua;
+}
+.seaf{
+    margin: ;
+    padding: 20px 0 10px 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.logo{
+    width: 100px;
+    height: ;
+    font-weight: 800;
+    float: left;
+    font-size: 40px;
+    color: aquamarine;
+}
+
+#seaw{
+    border: 0;
+    width: 400px;
+    height: 40px;
+    font-size: 35px;
+    background-color:5px;
+
+}
+.bt>button{
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    background-color: green;
+    color: aliceblue;
+    border: 0;
+}
+.bt>button:hover{
+    cursor: pointer;
+    }
+.sea{
+     display:flex;
+    border:2px solid #19ce60;
+    margin-top:6px;
+    height:40px;
+}
+    
+.menul{
+     width:1000px;
+     height:30px;
+     margin:0 auto;
+     padding:10px 0 10px 0;
+}
+.manuu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 1000px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 800; /*글씨 굵기*/
+
+
+}
+.menun{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width:10%; calc(1000 / 10 * 1px);
+     color: darkcyan;
+     display: inline;
+     margin-right: 20px;
+
+}
+.menun:hover{
+    cursor: pointer;
+}
+
+#cont{
+    width: 700px;
+
+}
+#sub{
+    padding: 20px;
+}
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.a{
+    position: absolute; /*중심*/
+    width:50px;
+    height: 50px;
+    background: chartreuse;
+}
+.s{
+   
+    background:darkblue;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 150px;
+    z-index: 100;
+    position: fixed; /*고정해버리는 태그*/
+
+}
+.d{
+    width:150px;
+    height: 2000px;
+    background: darkmagenta;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+body{
+    margin: 0;
+}
+q{
+    position: relative; 
+    width:50px;
+    height: 50px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    
+<div class="a q">d</div>
+
+<div class="s q">d </div>
+
+<div class="d q">s </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            /*이제부터 컨 이름을 가진  디아이브이는 플렉스야*/
+            display: flex;
+            /*flex-direction: 아이템을 가로가 아닌 세로로 배치*/
+            flex-direction: column;
+            /*justify-content: 컨테이너 안에있는 아이템 위치*/
+            justify-content: space-around;
+            width: 500px;
+            height: 200px;
+            border: 1 solid black;
+        }
+        .i1{
+            background-color: darkblue;
+            flex-basis:30%;
+            /*flex-basis:30%; 아이템 크기 조절
+            컨테이너 크기에서 30%를 차지*/
+        }
+        .i2{
+            background-color: aqua;
+            flex-basis: 20%;
+
+        }
+        .i3{
+            flex-basis: 50%;
+            background-color: red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!--플렉스: 컨테이너 와 아이템 으로 구성댐-->
+    <div class="con">
+    <div class="i1">아이템 1</div>
+    <div class="i2">아이템 2</div>
+    <div class="i3">아이템 3</div>
+
+    </div>
+</body>
+</html>

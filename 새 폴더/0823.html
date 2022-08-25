@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:0;
+            margin: 0;
+            font-size: 12pt;
+            font-family: '돋움';
+        }
+        #jo_ma{
+            width: 100%;
+            height: auto;
+        }
+        #jo_wr{
+            width: 700px;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        #jo_wr fieldset{
+            border-radius: 10px;
+            padding: 15px 20px 10px 20px;
+        }
+        .in_wr{
+            display: flex;
+            width: 660px;
+            height: 35px;
+            line-height: 35px;
+            margin-bottom: 10px;
+        }
+        .ti{
+            width: 120px;
+            font-size: 15pt;
+            font-weight: 700;
+            text-align: right;
+            padding-right: 10px;
+        }
+        .jo_in{
+            width: 500px;
+            height: 29px;
+            font-size: 13pt;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        #name{width: 150px;}
+
+        hr{
+            border: 2px solid black;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .ad_it input{
+            height: 20px;
+            width: 100px;
+            font-size: 15pt;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        #ad1 , #ad2{
+            width: 500px;
+        }
+        .in_it{
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .it_li{
+            width: 33%;
+            font-size: 13pt;
+        }
+        .it_li input[type=checkbox]{
+            height: 20px;
+            width: 20px;
+        }
+        #jo_bt{
+            width: 150px;
+            height: 37px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        #jo_bt a{
+            text-decoration: none;
+            background: chartreuse;
+            display: block;
+            height: 36px;
+            line-height: 37px;
+            text-align: center;
+            color: white;
+            font-weight: 900;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="jo_ma">
+        <div id="jo_wr">
+            <h2>회원가입</h2>        
+            <fieldset>
+                <legend>기존정보</legend>
+                    <div class="in_wr">
+                        <div class="ti">아이디</div>
+                        <div class="jo_in">
+                            <input type="text" name="id" 
+                            id="id" placeholder="아이디를 입력하세요">
+
+                        </div>
+                    </div>
+                    <div class="in_wr">
+                        <div class="ti">비밀번호</div>
+                        <div class="jo_in">
+                            <input type="password" name="pw"
+                             id="pw" placeholder="비밀번호 입력하세요ㅕ">
+
+                        </div>
+
+                    </div>
+                    <div class="in_wr">
+                        <div class="ti">dㅣ름</div>
+                        <div class="jo_in">
+                            <input type="name" name="name" id="name">                        </div>
+                    </div>
+                </div>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <legend >선택사항</legend>
+                    <div class="in_wr">
+                    <div class="ti">주소</div>
+                    <div class="ad_it">
+                        <div>
+                            <input type="text" name="pos" id="pos" placeholder="dksksksks">
+                            <input type="but" value="주소검색">
+                        </div>
+                        <div>
+                            <input type="text"name="ad1">
+                        </div>
+                        <div>
+                            <input type="text" name="ad2">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="ad_wr">
+                        <div class="ti">관심분야</div>
+                        <div class="int_it">
+                           <div> <input type="checkbox" name=" int">영화</div>
+                        </div>
+                        <div class="it_li">
+                            <input type="checkbox" name="int">음악
+                        </div>
+                    </div>
+                    <div class="it_li">
+                        <input type="checkbox" name="int">어쩌고
+                    </div>
+                </div>
+                <div class="it_li">
+                    <input type="checkbox" name="int">저쩌고
+                </div>
+            </div>
+            <div class="it_li">
+                <input type="checkbox" name="int">이거
+              </div>
+                    </div>
+                        <div class="it_li">
+                            <input type="checkbox" name="int">영화
+                        </div>
+                    </div>
+                </div>
+                <div class="ad_wr">
+                    <div class="ti">성별</div>
+                    <div>
+                        <input type="radio" name="gen">남
+                        <input type="radio" name="gen">여 
+                    </div>
+                </div>
+
+                </fieldset>
+                <div id="jo_bt">
+                    <a href="링크">가입하기</a>           <!--a 는 하이퍼링크 기능-->
+                </div>
+        </div>
+    </div>
+</body>
+</html>

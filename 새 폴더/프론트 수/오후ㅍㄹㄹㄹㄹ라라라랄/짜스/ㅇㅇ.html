@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <input id="name" type="text" value="오느르은 목요일"    >
+ <button onclick="check()">확인</button>    <!--클릭했을뗴 온클릭ㄱ-->
+
+</body>
+
+<script>
+
+//독큐먼트=html
+//갯 어쩌고 바이 어쩌고 = id로 태그를 얻겠다
+//value 벨류= 값을 의미
+
+    function check(){
+        var name = document.getElementById("name").value;
+        alert(name);
+        var hover = document.getElementById("hobby").value;
+        alert(name+','+hobby); //alert : 알림창
+    }
+
+</script>
+</html>

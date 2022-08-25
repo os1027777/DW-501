@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {padding: 0; margin: 0; box-sizing: border-box;}
+        .container{ width: 300px; height: auto; margin: 200px auto; background-color: #efefef; padding: 2%;}
+        select {width: 100%; height: 30px;}
+        .input-box {margin-bottom: 10px;} 
+        h2 {text-align: center;}
+        button {width: 100%; height: 35px; cursor: pointer; height: 30px; appearance: none; background: #0d6efd; color: #fff;  border: none; border-radius: 5px;}
+        button:hover {background: #fff; color: #0d6efd; font-weight: bold; transition: 0.5s;}
+        input[type=number] {width: 97%; height: 25px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>빽다방 메뉴</h2>
+        <div class="input-box">
+            <select id="menu">
+                <option value="null">메뉴를 선택해주세요.</option>
+                <option value="아메리카노">앗!메리카노</option>
+                <option value="원조커피">원조커피</option>
+                <option value="달달연유라떼">달달연유라떼</option>
+                <option value="품절">금가루가뿌려진라떼</option>
+            </select>
+        </div>
+        <div class="input-box">
+            ICED : <input type="radio" name="type" value="ice" checked>
+            HOT : <input type="radio" name="type" value="hot">
+        </div>
+        <div class="input-box">
+            L size : <input type="radio" name="size" value="L" checked>
+            M size : <input type="radio" name="size" value="M">
+        </div>
+        <div class="input-box">
+            <input  id="num" type="number" placeholder="수량을 입력해주세요">
+        </div>
+        <div class="input-box">
+            <textarea id="memo" cols="35" rows="10" placeholder="추가 사항이 있으면 적어주세요."></textarea>
+        </div>
+        <div class="input-box">
+            <button onclick="doclick()">주문 완료</button>
+        </div>
+    </div>
+</body>
+<script>
+    
+    function doclick(){
+
+            var doclick = document.getElementById('menu').value;
+            console.log(doclick);
+            if(doclick == 'null'){
+                console.log('메뉴를 선택해 주세요!')
+            }
+            if(doclick == '품절'){
+                console.log('죄송합니다 해당 상품은 품절입니다.')
+            }
+                var num = document.getElementById('num').value
+            console.log(num); 
+            if(num > 10){
+                    console.log('그만사요')
+                }
+                else{
+                    console.log('좀 더사요')
+            }
+            if(num == 0){
+                console.log('수량을 입력해주세여')
+            }
+            var type = document.querySelector
+            ('input[name=type]:checked').value
+                console.log(type);
+
+            
+        }
+        
+
+
+
+          
+
+    /* 
+     문제 3. 선택 혹은 입력된 값을 모두 출력하시오.
+     "수량을 입력해주세요!" 출력하시오.
+    */
+</script>
+</html>
