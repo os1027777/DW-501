@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="아이디" type="text" placeholder="아이디입력">
+    <input id="yourpassword" type="password" placeholder="비밀번호입력">
+    <input id="비밀번호" type="password" placeholder="비밀번호 재입력">
+    <input id="이메일" type="email" placeholder="이메일입력">
+    <button onclick="퐁성규()">회원가입</button>
+
+    
+</body>
+<script>
+    function 퐁성규(){//함수시작
+        var a = document.getElementById('아이디').value;
+        if(a == ''){
+         
+            alert('고객님 아이디를 입력해주세여');
+            document.getElementById('아이디').focus() 
+            //스크롤 안해도 자동으로 알려줌
+             return false;
+        } 
+
+        var password = document.getElementById('yourpassword').value
+        
+        if(password == ''){
+        alert('고객님 비밀번호를 입력해주세요')
+        document.getElementById('yourpassword').focus()
+         return false
+        }
+
+        var 멍청이 = document.getElementById('비밀번호').value
+
+        if(멍청이 == ''){
+            alert('고객님 비밀번호를 재입력 입력해주세요')
+            document.getElementById('이메일').focus()
+        }
+
+        var email = document.getElementById('이메일').value;
+
+        if(email == ''){
+            alert('고객님 이메일를 입력해주세여');
+            document.getElementById('이메일').focus() 
+             return false;
+            }
+
+            if(password != 멍청이){
+                alert('다시')
+                return false
+            }
+
+            alert('회원가입 완료')
+            
+            
+    }//함수끝
+
+
+</script>
+</html>

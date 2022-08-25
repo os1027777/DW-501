@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"type="text/css" href="foon.css">
+</head>
+<body>
+
+    <div id="write_box">
+        <div id="write_wrap">
+            <div class="move_list">
+                <a href="board_list.html">목록</a>
+            </div>
+            <div class="write_form">
+                <!--프롬 : 데이터를 전달하기 위한 영역
+                전달 방법:get., post 
+                 겟 : 데이터를 가공하지 않고 전달
+                포스트: 데이터를 암호화 하여 전달           -->
+                <div mathod="get" action="board_save_html">
+                    <div class="box">
+
+                        <div class="box_title">
+                            작성자
+                        </div>
+                     <div class="box_input1">
+                        <input type="text" name="writer" id="writer">
+                        </div>
+
+                        <div class="box_title">
+                            조회수
+                        </div>
+                    <div class="box_input2">
+                        <input type="text" name="writer" id="writer">
+                        </div>
+
+                        
+                  
+
+
+                    </div>
+                <div class=" box">
+                    <div class="box_title">
+                        제목
+                    </div>
+                    <div class="box_input">
+                        <input type="text" name="title" id="title">
+                    </div>
+                </div>
+                <div class="box content_box">
+                    <div class="box_title">
+                        내용
+                    </div>
+                    <div class="box-input">
+                        <textarea name="content" id="content"></textarea>
+                    </div>
+                </div>
+                <div class="bt">
+                    <button type="button" class="save_bt1">목록</button>
+                    <button type="button" class="save_bt2">수정</button>
+                    <button type="button" class="save_bt3">삭제</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
