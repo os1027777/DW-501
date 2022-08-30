@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    #item_box{
+        width: 100%;
+        height: auto;
+        margin: 50px;
+    }
+    #item_listwrap{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+    #search_box{
+        width: 1200px;
+        height: 50px;
+        display: flex;
+    }
+    #search{
+        width: 600px;
+        height: 30px;
+    }
+    #search_bt{
+        width: 90px;
+        height: 36px;
+    }
+    #sort_box{
+        display: flex;
+        width: 700px;
+        height: 50px;
+    }
+    #sort_box p{
+        text-align:center;
+        width: 100px;
+        height: 40px;
+        margin: 0;
+    }
+    #item_list_box{
+        width: 1200px;
+        height: auto;
+        margin-top: 50px;
+    }
+    .item_kind a{
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .item_kind a:hover{
+        color: blue;
+    }        
+    .item_wrap{
+        display: flex;
+        width: 1200px;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+    .item{
+        width: 390px;
+        height: 500px;
+        padding: 0 10px 0 10px;
+    }
+    .item_img{
+        width: 380px;
+        height: 390px;
+    }
+    .item_img img{
+        max-width: 380px;
+    }
+    .item_money i, .item_title, .item_content i{
+        width:  i380px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .item_money{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    /*상품위에 마우스 오버시*/
+    .item:hover{
+        border: 1px solid red;
+        cursor:pointer;
+    }
+    .item:hover .i{
+        text-decoration: un iderline;
+    }
+
+</style>
+
+<body>
+    <div id="item_box">
+        <div id=" item_listwrap">
+            <div id="search_box">
+                <div>
+                <input type="text" id="search" name="search">
+            </div>
+            <div>
+                <input type="button" value="검색">
+            </div>
+        </div>
+            <div id="sort_box">
+                <p>인기순</p>
+                <p>신상품순</p>
+                <p>낮은가격</p>
+                <p>높은가격</p>
+                <p>리뷰많은</p>
+                <p>판매량</p>
+            </div>
+            <div id="item_list_box">
+                <div class="item_kind">
+                    <a href="#nike">나이키</a>
+                    <a href="#reebox">리북</a>
+                    <a href="#addida">아디다스</a>
+                    <a href="#fila">휠라</a>
+                    <a href="#newbal">퐁성규</a>
+                </div>
+                
+                <div id="nike"></div>
+                <div class="item_wrap">
+                    <div class="item"></div>
+                    <div class="item_img"><img src="125.jfif"></div>
+                    <div class="item_money i"> 121</div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item">
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+            </div>
+            <div id="item_list_box">
+                <div class="item_kind">
+                    <a href="#nike">나이키</a>
+                    <a href="#reebox">리북</a>
+                    <a href="#addida">아디다스</a>
+                    <a href="#fila">휠라</a>
+                    <a href="#newbal">퐁성규</a>
+                </div>
+                <div id="reebox"></div>
+                <div class="item_wrap">
+                    <div class="item"></div>
+                    <div class="item_img"><img src="125.jfif"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item"></div>
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item"></div>
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item"></div>
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+            </div>
+            <div id="item_list_box">
+                <div class="item_kind">
+                    <a href="#nike">나이키</a>
+                    <a href="#reebox">리북</a>
+                    <a href="#addida">아디다스</a>
+                    <a href="#fila">휠라</a>
+                    <a href="#newbal">퐁성규</a>
+                </div>
+                <div id="addida"></div>
+                <div class="item_wrap">
+                    <div class="item"></div>
+                    <div class="item_img"><img src="125.jfif"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item"></div>
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item"></div>
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item"></div>
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+            </div>
+            <div id="item_list_box">
+                <div class="item_kind">
+                    <a href="#nike">나이키</a>
+                    <a href="#reebox">리북</a>
+                    <a href="#addida">아디다스</a>
+                    <a href="#fila">휠라</a>
+                    <a href="#newbal">퐁성규</a>
+                </div>
+                <div id="fila"></div>
+                <div class="item_wrap">
+                    <div class="item"></div>
+                    <div class="item_img"><img src="125.jfif"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item"></div>
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item"></div>
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+            </div>
+            <div id="item_list_box">
+                <div class="item_kind">
+                    <a href="#nike">나이키</a>
+                    <a href="#reebox">리북</a>
+                    <a href="#addida">아디다스</a>
+                    <a href="#fila">휠라</a>
+                    <a href="#newbal">퐁성규</a>
+                </div>
+                <div id="newbal"></div>
+                <div class="item_wrap">
+                    <div class="item_img"><img src="125.jfif"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+                <div class="item">
+                    <div class="item_img"></div>
+                    <div class="item_money i"></div>
+                    <div class="item_title i"></div>
+                    <div class="item_content i"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
