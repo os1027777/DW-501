@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing:;
+        }
+        #detail_mask{
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+        #detail_wrap{
+            width: 1000px;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+        }
+        .item_detail_wrap{
+            width: 800px;
+            height: auto;
+            position: relative;
+        }
+        #item_pay_wrap{
+            width: 197px;
+            height: 500px;
+            border: 1px solid red;
+            position: fixed;
+            margin-left: 800px;
+            
+        }
+        .item_main_img{
+            float: left;
+            width: 400px;
+            height: 500px;
+        }
+        .big {
+            max-width: 300px;
+            max-height: 400px;
+            text-align: center;
+            margin-right: auto;
+            vertical-align: middle;
+        }
+        .big img{width: 300px; margin: 0 auto;
+        }
+       
+        .small{ margin-top: 6px; width: 80px; height: 80px ; margin: 0 auto; overflow: hidden;
+        }
+        .small img{
+            width: 80px;
+        }
+        .item_main_info{
+            width: 360px;
+            height: 500px;
+            padding: 0 20px 0 20px;
+            position: relative;
+            float:left;
+        }
+        .item_name_money{
+            width: 360px;
+            height: 60px;
+            margin-bottom: 30px;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .item_name_money{
+            line-height: 20px;
+        }
+        .delivery_info{
+            width: 370px;
+            height: 100px;
+            line-height: 25px;
+        }
+        #item_pay_top{
+            width: 185px;
+            margin: 3.5px;
+            padding: 3px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        .item_pay_name{font-weight: 800;}
+
+        .item_among button{
+            width: 30px;
+            height: 30px;
+            margin: 0;
+            background-color: blue;
+            border: 1px solid black;    
+        }
+        #am{width: 50px;
+            height: 30px;
+            font-size: 15pt;
+            margin: 0;
+            border: 0;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+
+
+        }
+        #am::-webkit-inner-spin-button , #am::-webkit-outer-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+       
+
+        </style>
+</head>
+<body>
+    <div id="detail_mask">
+        <div id="detail_wrap">
+            <div id="item_basic">
+                <div class="item_main_img">
+                    <div class="big">
+                    <img src="125.jfif">
+                </div>
+                <div class="small">
+                    <img src="125.jfif">
+                </div>
+                </div>
+                <div class="item_main_info">
+                    <div class="item_name_money">
+                    <div class="item_name">
+                        아디다스 신발 한정판 출시
+                    </div>
+                </div>
+                    <div class=" item_money">
+                        90000만원
+                    </div>
+                </div>
+                <div class="delivery_info">
+                    <div>dsdsd</div>
+                    <div>sdsdsd</div>
+                    <div>sdsds</div>
+                    <div>sdsdsds</div>
+                </div>
+            </div>
+            <div id="item_basic">
+
+            </div>
+        </div>
+        <div id="item_pay_wrap">
+            <div id="item_pay_top">
+                <div class="irem_pay_name">
+                    아디다스 신발 한저판
+                </div>
+                <div class="item_among">
+                   <div> <button></button></div>
+                   <div> <input type="number" name="ni" id="ni"></div>
+                   <div> <button></button></div>
+
+                </div>
+                <div class="item_total">
+                    890000원
+                </div>
+            </div>
+            <div id="item_pat_money">금액 :</div>
+        </div>
+    </div>
+    
+</body>
+</html>

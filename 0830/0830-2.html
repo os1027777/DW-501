@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="box" class="input_box">
+            <input type="text" placeholder="이름입력"></input>
+            <input type="text" placeholder="연락처 입력"></input>
+            <input type="text" placeholder="주소입력"></input>
+            <input type="text" placeholder="이메일 입력"></input>
+            <input type="text" placeholder="기타사항입력"></input>
+        </div>
+        <button onclick="check()">출력</button>
+    </div>
+</body>
+<script>
+    function check(){
+
+        var box = document.getElementById('box').children;
+        for( i=0; i< box.length; i++)
+        var inputValue = box[i]; 
+        console.log(box[0].value);
+        console.log(box[1].value);
+        console.log(box[2].value);
+        console.log(box[3].value);
+        if(inputValue.value == ''){
+            alert('값을 입력해주세요')
+            inputValue.focus();
+            return false;
+        }
+    }
+
+</script>
+</html>
