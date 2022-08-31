@@ -107,8 +107,51 @@
             -webkit-appearance: none;
             margin: 0;
         }
-       
+        .item_among{
+            display: flex;
 
+        }
+        #item_pay_money{
+            margin-top: 200px;
+            width: 100%;
+        }
+        #item_pay_money span{
+            display: inline-block;
+        }
+        .total_money{
+            width: 182;
+            margin: 0 auto;
+            height: 30px;
+        }
+        .total{
+            line-height: 30px;
+            width: 60px;
+        }
+        .pay_money{
+            width: 120px;
+            line-height: 30px;
+            text-align: right;
+        }
+        .line_deco{
+            width: 162px;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .coupon{
+            width: 182px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            font-size: 10pt;
+        }
+        .coupon_change{width: 50px;}
+        .coupon_change button{
+            width: 50px;
+            font-size: 10pt;
+            padding: 0;
+            margin-left: 10px;
+        }
+        
         </style>
 </head>
 <body>
@@ -159,7 +202,27 @@
                     890000원
                 </div>
             </div>
-            <div id="item_pat_money">금액 :</div>
+            <div id="item_pat_money">
+                <div class="total_money">
+                    <span class="total"></span>
+                    <span class="pay_money"></span>
+                </div>
+                <hr class="line_deco">
+                <div class="coupon">
+                    <span class="coupon_ment">
+                        .적용가능한 ㅁ크폰없음<hr>
+                        배속비 200000원ⓛ
+                    </span>
+                    <span class="coupon ment">
+                        <button>쿠폰변경</button>
+                    </span>
+                </div>
+                <div class="cart_buy">
+                    <a href="" id="cart">장바구니</a>
+                    <a href="" id="buy">구매하기</a>
+                    <a href="" id="gift">선물</a>
+                </div>
+            </div>
         </div>
     </div>
     
