@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            /*이미지가 아닌 다른태그에 이미지넣기*/
+            background-image: url(background.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            padding: 0 8%;
+        }
+        .logo{
+            padding: 50px 30px;
+            cursor: pointer;
+        }
+        .content{
+            position: absolute;
+            top:50%;
+            color: #fff;
+            transform: translateY(-50%);
+        }
+        .content h1{
+            font-size: 64px;
+            font-weight: 600;
+        }
+        .content h1 span{
+            color: #ff3757;
+        }
+        .time div p{
+            font-size: 60pt;
+            margin-bottom: -12px;
+
+        }  
+        .time div p{
+            flex-basis: 100px;
+            margin-right: 30px;
+            margin-bottom: -12px;
+
+        }
+        
+        .time{
+            display: flex;
+        }
+      
+
+        .rocket{
+            position: absolute;
+            right: 13%;
+            bottom: 0;
+            /*로켓: 키프레임 이름
+                4s애니메이션 실행시간
+                이니언 : 일정한 방향
+                인피니티:무한반복
+            */
+
+            animation: rocket 4s linear infinite;
+        }
+        @keyframes rocket{
+            /*opacity:투명도 0은 보임 1은 안보임
+                0프로 시작 
+                100프로 끝
+            */
+            0%{
+                bottom: 0;
+                opacity: 0;
+            }
+            100%{
+                bottom: 60%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--로고-->
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="content">
+            <p>에픽세븐 좀 해줘요</p>
+            <h1><span>퐁성규</span></h1>
+            <div class="time">
+                <div>
+                    <p id="days">00</p>
+                    <span>days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>seconds</span>
+                </div>
+            </div>
+        </div>
+        <img class="rocket" src="rocket.png">
+    </div>
+</body>
+<script>
+    /*무한으로 실행시켜주는 자바스크립트 함수*/
+    var endDay = new Date('February 06, 2023 00:00:00');
+    setInterval(function(){
+        var nowDay = new Date().getTime(); /*현재 시각 불러오기*/
+        console.log(nowDay);
+        var diff = endDay - nowDay;
+        var days = Math.floor(diff / (1000*60*60*24));
+        //Math.floor 소수내림 1.2일이면 1일로
+        var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+        var minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+        var seconds = Math.floor((diff % (1000*60)) / (1000));
+
+        document.getElementById('days').innerHTML = days;
+        
+        document.getElementById('hours').innerHTML = hours;
+        
+        document.getElementById('minutes').innerHTML = minutes;
+        
+        document.getElementById('seconds').innerHTML = seconds;
+
+
+    },1000);
+</script>
+</html>
