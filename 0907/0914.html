@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        var ser = parseInt(prompt("1가위 2바위 3보"));
+        var com = Math.floor(Math.random()*3)+1;
+
+        if(ser == com){
+            document.write("비김");
+        }else if((ser == 1 && com == 3) || (
+        ser == 2 && com == 1) || (ser == 3 && com ==2)){
+        document.write("나의 승");
+        }else{
+            document.write("나의 패배다")
+        }
+
+
+
+
+
+
+      
+//var time = parseInt(prompt("주차시간"))
+//var cost = 1000;
+//var costad = 10;
+//cost = time >= 120 ? 1700 : cost;
+//costad = time >= 140 ? 1111 : costad;
+
+//var ptime =  time >= 120 ? time - 120 : time - 30; 
+//var ptime =  time >= 140 ? time - 140 : time - 30; 
+
+//var price = parseInt(ptime/10) *100 + cost;
+
+//price = time < 40 ? cost : price; 10
+//price = time < 140 ? cost : price; 
+
+//document.write('주차시간:'+time +'분 주차요금:'+ price)
+
+
+var cost = 1000;
+var add = 100;
+
+var hour = parseInt(prompt("주차시간(시"))
+var min = parseInt(prompt("주차시간(분"))
+
+var total_time = (hour*60) + min;
+if (hour >= 8){
+    cost= 5000;
+    total_time=0;
+}else if(hour >= 4){     //4시간 이상 주차
+    cost = 2700;
+    total_time = total_time - 240;
+}else if(hour >= 2){     // 2시간 이상 주차
+    cost= 1700;
+    total_time = total_time - 120;  //시간빼기
+}else if(total_time >= 30){     //30분 이상 주차
+    total_time = total_time - 30;   //시간 빼기
+}
+
+var price = cost +(parseInt(total_time / 10)*100);
+price = (hour == 0 )& (min<=30) ? cost : price;
+document.write("주차요금 : " +price + "원");
+
+var name = prompt("이름")
+var name = prompt("주소")
+var name = prompt("이메일")
+var name = prompt("직업")
+var school;
+var name = prompt("이름")
+//switch문 
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

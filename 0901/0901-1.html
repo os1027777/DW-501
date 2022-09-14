@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    var ar = ['바나나','딸기','사과','수박'];
+ /*   var ba = '바나나';
+    var ap = '사과';
+    var str = '딸기'   */
+    console.log('배열을 출력하겠습니다.');
+    console.log(ar[0]); 
+    console.log(ar[1]); 
+    console.log(ar[2]); 
+    console.log(ar[3]); 
+    console.log(ar.length); 
+
+for(var i=0; i<ar.length; i++){
+    var x = ar[i];
+    console.log(x);
+}
+
+var ar2 = [1,4,8,10];
+var count = 0;
+    for(var i=0; i<ar2.length; i++){ //for 시작
+        var y = ar2[i];
+        if(y%2 == 0 ){
+            count++;
+        }
+    }//for 끝
+    console.log('짝수 개수는 '+count);
+</script>
+</html>

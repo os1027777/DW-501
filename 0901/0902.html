@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            width: 1000px;
+            height: 80px;
+            position: relative;
+        }
+        #main_menu{
+            list-style: none;
+            width: 1000px;
+            height: 80px;
+            position: relative;
+        }
+        #menu ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+        #main_menu{
+            width: 1000px;
+            height: 80px;
+            position: relative;
+            
+        }
+        #main_menu>li{
+            width: 200px;
+            float: left;
+            line-height: 88px;
+            text-align: center;
+            background-color: aqua;
+            position: relative;
+        }
+        #main_menu .li{
+            width: 0;
+            height: 0;
+            top: -10px;
+            position: absolute
+
+        }
+        #main_menu .sub{
+            display: none; /*표시 안함*/
+            -webkit-transition: all  1s;
+            transition: 2s;
+        }
+        #main_menu:hover .sub{
+            display: block;
+            background: lawngreen;
+            height: 320px;
+        }
+        #main_menu .sub li{
+        -webkit-transition: all  1s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul id="main_menu">
+            <li>메뉴1
+                <ul class="sub">
+                    <li>서프매뉴1</li>
+                    <li>서프매뉴1</li>
+                    <li>서프매뉴1</li>
+                </ul>
+            </li>
+            <li>메뉴1
+                <ul class="sub">
+                    <li>서프매뉴1</li>
+                    <li>서프매뉴1</li>
+                    <li>서프매뉴1</li>
+                </ul>
+            </li>
+            <li>메뉴1
+                <ul class="sub">
+                    <li>서프매뉴1</li>
+                    <li>서프매뉴1</li>
+                    <li>서프매뉴1</li>
+                </ul>
+            </li>
+            <li>메뉴1
+                <ul class="sub">
+                    <li>서프매뉴1</li>
+                    <li>서프매뉴1</li>
+                    <li>서프매뉴1</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="sub_menu">
+        <ul id="sub_menu">
+
+        </ul>
+    </div>
+</body>
+</html>

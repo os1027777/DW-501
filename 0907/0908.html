@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var num1 = 10;
+    var num2 = 20;
+    var num3 = 0;
+
+    num3 = num2 % num1; // %나누기 연산, 결과값은 나머지값
+    num3 = num2 > num1; // 비교연산자, 비교연산자의 결과는 tuer false
+
+    num2 = 15; num1 = 29;
+    num3 = num2 >= num1; //false
+
+    num2 = 11; num1 = 12;
+    num3 = num2 != num1;//트루
+    num3 = num2 == num1; //false
+
+    var result;
+    num =21; num2=36; num3 = 25;
+    result = num2 > num1 && num2> num3; //참
+    //참 &&참 > 참 ,     거짓 &&참 > 거짓
+    
+    result = num1 > num2 || num2 > num3 //th루
+    // 거짓 ||참 > 참
+
+    result = (num1 > 10 || num2 < 40) && (num3 > 100 && num2 <10);
+
+    //조건 연산자 : 조건식
+
+    //var num1 = 20;
+   // var num2 = 24;
+
+    //var result = num1 > num2 ? num1 : num2;
+    //document.write(result)
+
+   // var num1 = parseInt(prompt('정수입력'))
+    //var num2 = parseInt(prompt('정수입력'))
+
+   // var result = num1 > num2 ? "큰수 :" +num2 : "큰수 :" +num1;
+
+    //계산식 ㅡ 조건연산자 ㅜ 함수등 등 가능
+    //대신 대입연산자는 아노댐
+
+   // var num01 = parseInt(prompt('키입력'))
+   // var result = num01 >= 130 ? '탑승가능' : '탑승불가'
+
+   // document.write(result)
+
+  //  var num000 = parseInt(prompt('정수1'))
+  //  var num001 = parseInt(prompt('정수2'))
+  //  var num002 = parseInt(prompt('정수3'))
+
+  //  var result = num000 > num001 ? num000 : num001;
+  //   result = result > num002 ? result : num002;
+
+   //  document.write(result)
+
+ //   var ra = parseInt(prompt('4의 배수'))
+  //  var result = ra % 4 == 0 ? "4의 배수" : "4의 배수가 아님";
+   // document.write(result)
+
+  //  var min = parseInt(prompt('분'));
+//var basic = 1000;
+//var add = 100;
+
+//var result = min >= 120 ? parseInt((min - 120) / 10) *add + basic + 500 + '원' : min >= 40 ? parseInt((min - 30) / 10) * add + basic + '원'  : basic + '원';
+//document.write(result);
+
+
+
+
+var time = parseInt(prompt("주차시간"))
+var cost = 1000;
+cost = time >= 120 ? 1500 : cost;
+
+var ptime =  time >= 120 ? time - 120 : time - 30; //총 주차시간 에서 기본시간 제외***************
+
+var price = parseInt(ptime/10) *100 + cost;
+
+price = time < 40 ? cost : price; //기본시간 이상 주차여부*************
+
+document.write('주차시간:'+time +'분 주차요금:'+ price)
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

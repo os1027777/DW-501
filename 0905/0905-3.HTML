@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    var ar = [3,10,8];
+    console.log(ar[0]);
+    var item = ar[0];
+    console.log(item)
+
+    var a = 0
+    for(var i=0; i<ar.length ; i++){
+    a = a + ar[i];
+}
+ console.log(a)
+
+
+ //2번
+ var z = 0;
+ var ar1 = [2,3,9,2,5];
+ for(var i=0; i<ar1.length; i++){
+    var z = z + ar1[i]
+        if(z = 10){
+           break;
+    } 
+ }
+ console.log(z)
+
+
+
+  //1번
+var count = 0;
+ var ar2 = [2,3,9,2,5];
+ for(var i=0; i<ar2.length; i++){
+    
+        var x = ar2[i];
+        if( x =='2'){
+            count++
+        }
+    }
+    console.log(count)
+
+
+//3번
+var az = 0;
+var ar3 = [2,3,9,2,5];
+for(var i=0; i<ar3.length; i++){
+var x = ar3[i];
+if( az< x){
+    az = x
+}}
+console.log(az+'뼤에에엥에ㅔㅇㄱ')
+
+//99단 전부
+for(var i=2; i<=9; i++){
+    console.log('구구단을 시작합니다.'+i+'단 시작');
+    for(var j=1; j<=9; j++){
+        console.log(i+'*'+j+'='+(i*j));
+    }
+    console.log(i+'단 종료');
+}
+
+
+//2~5단까지만
+for(var i=2; i<=5; i++){
+    console.log('구구단을 시작합니다.'+i+'단 시작');
+    for(var j=1; j<=9; j++){
+        console.log(i+'*'+j+'='+(i*j));
+    }
+    console.log(i+'단 종료');
+}
+
+
+</script>
+</html>

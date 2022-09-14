@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var ar = [10,4,8,19,20];
+    console.log(ar[1]); 
+
+    var x = ar[1];
+    if(x == 4){
+        console.log('x는'+x+'입니다');
+    }
+    console.log(ar[2]);
+    
+    //많이사용하는 방법
+    var size = ar.length;
+    console.log(ar[size-1]);
+   
+
+    //갯수 구하기
+    var dont = ['오리지날 도낫','오리지날 도낫','오리오리오리날지','오리지날 도낫']
+        var count = 0;
+         for(var i=0; i<dont.length; i++){
+        var x = dont[i];
+        if( x =='오리지날 도낫'){
+            count++
+        }
+    }
+    console.log(count)
+
+    
+//번호찾기
+   var cafe = ['스타벅스 선화점','스타벅스 대흥점','스타벅스 둔산점']
+   for(var i=0; i<cafe.length; i++){
+    if(cafe[i] == '스타벅스 대흥점'){
+        console.log('스타벅스 대흥점은'+i+'번에 있습니다')
+        break
+    }
+   }
+   //숫자세기
+    var x = 0; y = 0; z = 0;
+   var cha = ['전사','도적','마법사','마법사','도적','전사'];
+    for(var i=0; i<cha.length; i++){
+        if( cha[i] == '도적'){
+            x++
+        }
+        if( cha[i] == '전사'){
+            y++
+        }
+        if(cha[i] == '마법사')
+          z++
+          var xxxx = x+y+z
+         
+    }
+    console.log(z +'d'+y +'d'+x +'d'+ xxxx)
+   
+
+//숫자더하기
+   var num = [10,20];
+   var zz = num[0] + num[1];
+   console.log(zz)
+
+    var num2 = [10,20,30];
+    var zzz = num2[0]+num2[1]+num2[2];
+    console.log(zzz)
+
+    //이프로 숫자더하기
+    var num3 = [10,20,30];
+    for(var i=0; i<num3.length; i++){
+        if(xxx = num3[0]+num3[1]+num3[2]){
+        }
+    }
+    console.log(xxx)
+
+</script>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .acodian매뉴{
+            font: 12px/20px 돋움;
+            color: black;
+            background-color: aqua;
+            padding: 10px;
+            width: 509px;
+            margin: 0;
+        }
+        .acodian매뉴 h1{
+            margin: 0;
+            font-size: 20px;
+            text-shadow: 2px 2px 2px blue;
+        }
+        .acodian매뉴 h2{
+            margin: 5px 0;
+            padding: 0;
+        }
+        .acodian매뉴 h2 a{
+            font-size: 15px;
+            display: block;
+            font-weight: normal;
+            color: red;
+            text-shadow: 2px 2px 2px tomato;
+            text-decoration: none;
+            background: -webkit-gradient(linear,left top,left bottom,from(#D4F4FA),to(#D14));
+            background: -moz-linear-gradient(top,#D4F,#D4F4FA);
+            -webkit-border-radius:5px;
+            -moz-border-radius:50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius:5px;
+        }
+        .acodian매뉴 :target h2 a , .acodian매뉴 h2 a:hover{
+            background: -webkit-gradient(linear,left top, left bottom, from(#D14));
+            font-weight: 800;
+        }   
+        .acodian매뉴 p{
+            padding: 0 10px;
+            margin: 0;
+            height: 0;
+            overflow: hidden;
+            -webkit-transition:height 0.5s ease-in;
+            transition: height 0.5s ease-in;
+        }
+        .acodian매뉴 :target p{
+            height: 100px;
+            overflow:  auto;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="acodian매뉴">
+        <h1>아코디언 메뉴</h1>
+        <div id="coffe" class="mensection">
+            <h2><a href="#coffe">coffe</a></h2>
+            <p><dr>아메리카노</dr>
+                <dr>카페라떄</dr>
+                <dr>콜드블루</dr>
+                <dr>바닐라라떼</dr>
+            </p>
+    </div>
+    <div id="milk" class="mensection">
+        <h2><a href="#milk">라떼</a></h2>
+        <p><dr>고구마 라떼</dr>
+            <dr>카페 라떄</dr>
+            <dr>밀크티</dr>
+            <dr>카라멜</dr>
+        </p>
+        </div>
+        <div id="shake" class="mensection">
+            <h2><a href="#shake">쉐이크</a></h2>
+            <p><dr>고구마 쉐이크</dr>
+                <dr>카페 쉐이크</dr>
+                <dr>밀크티 쉐이크</dr>
+                <dr>카라멜 쉐이크</dr>
+            </p>
+            </div>
+</body>
+</html>
