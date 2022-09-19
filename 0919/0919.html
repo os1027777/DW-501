@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #input_wrap{
+            display: flex;
+            flex-direction: column; /*세로방향으로 주기위해서 넣음*/
+            width: 300px;
+        }
+        #input_wrap input{
+            height: 40px;
+            font-size: 1.7rem;
+        }
+        #number2{order:3}
+        #number1{order:2}
+        #input[type='button']{
+            order : 1
+        }   
+        #result{
+
+        }
+    </style>
+    <script>
+        function execute(){  /*함수생성 해주기*/
+            var num1 = document.getElementById("number1");
+            var num2 = document.getElementById("number2");
+            var res = document.getElementById("result");
+
+            if(parseInt( num1.value) >parseInt( num2.value)){
+                res.innerHTML = "<h2> 큰숫자 :"+ num1.value+ "</h2>"
+            }else{
+                res.innerHTML = "큰숫자"+num2.value;
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="input_wrap">
+        <input type="text" id="number1" placeholder="정수입력">
+        <input type="text" id="number2" placeholder="정수입력">
+        <input type="button" onclick="execute()" value="입력">
+    </div>
+    <hr>
+    <div id="result"></div>
+</body>
+</html>
