@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //루프문 (반복문)
+        //for , while, do~while
+        //while - for
+
+        // 초기값 , 조건식, 증강식
+
+        document.getElementById('result').innerHTML="aaa";
+
+
+
+function start(it){
+        var res = document.querySelector('#result')
+
+        var out = '';
+
+        var i=1;
+
+        var count= 0 ;
+
+      while(i<=10){
+        var coin = Math.floor(Math.random()*50)+1;
+
+        switch(coin %2){
+        case 0 :
+            switch(it){
+                case 'front':
+                    out += "앞면 , 정답<br>"; 
+                    count++; 
+                    break;
+                    case 'back':
+                        out += "앞면 , 오답<br>";  
+                        break;
+            }
+            break;
+            case 1:
+                switch(it){
+                    case 'front':
+                    out += "뒷면 , 오답<br>";    
+                    break;
+                    case'back':
+                    out += "뒷면 , 정답<br>"; 
+                    count++;
+                    break;
+                }
+                break;
+        }        
+        i++;
+    }//와일문 끝
+    out += "정답확률 :"+count*50 + '%'; // out = out +"a"
+        res.innerHTML = out;
+}
+
+//무한루프
+var k =1;
+while(true){
+    document.write("무한반복");
+    if(k == 500000) break;
+    k++
+}
+
+while(true){
+    var num = parseInt(prompt());
+    document.write(num + '<br>');
+    if (num == 0) break;
+}
+
+    </script>
+</head>
+<body>
+    <input type="number" id="num">
+    <button onclick="gugu()">규규단</button>
+    <hr></hr>
+    <div id="result"></div> 
+
+     <input type="button" value="앞면" onclick="start('front')">
+    <input type="button" value="뒷면" onclick="start('back')">
+
+    <div id="result1"></div>
+
+
+    <input type="number"id="row">
+    <input type="number"id="col">
+    <button onclick="make()">태이블생성</button>
+    <div id="result1"></div>
+
+
+
+</body>
+</html>
+
+
+<script>
+
+    function make(){
+    var res = document.getElementById("result1");
+    var row = document.getElementById("row");
+    var col = document.getElementById("col");
+    
+    var out="";
+    var i=1;
+    out += "<table>";
+    while(i <=row.value){
+        out += "<tr>";
+            var k = 1;
+            while(k <=col.value){
+                out += "<td> a </td>";
+                k++;
+            }
+        out += "</tr>";
+  i++;
+}
+    out += "</table>";
+    res.innerHTML=out;
+    }
+</script>
+<style>
+    table tr td{
+        border: 1px solid black;
+        width: 50px;
+        height: 60px;
+        text-align: center;
+    }
+
+</style>
