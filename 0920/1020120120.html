@@ -5,55 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
- 
- var main() {
+    <style>
+      div{
+        text-align: center;
+      }
+    </style>
 
-  printf("\nThe program will generate 2 random numbers between 0 and 2 (0-Rock, 1-Paper, 2-Scissors)");
-  // 0은 바위, 1은 보자기 그리고 2는 가위라고 생각 해보자
-  srand(time(NULL));
-  var i1; 
-  var i2;
-  // 가위바위보는 둘이 대결하는 게임이니 i1 과 i2를 선언해줬다
-  i1 = rand() % 3; //i1이 낼 것 난수로 생성 (0부터 2까지)
-  i2 = rand() % 3; //i2가 낼 것 난수로 생성 (0부터 2까지)
-  printf("\nProgram generates: %d and %d", i1, i2);
+</head>
+<body>
+    <div>
+
+  <button onclick="main()">가위</button>
+  <button onclick="main()">바위</button>
+  <button onclick="main()">보</button>
+</div>
+
+
+</body>
+</html>   
+ <script>
+ function main() {
+
+  var i1 ; 
+  var i2 ;
+  i1 = rand() % 3; 
+  i2 = rand() % 3; 
   if ((i1 == 0 && i2 == 1) || (i1 == 1 && i2 == 0)) {
-    printf("\n\nPaper beats Rock");
-   // i1이 생성한 난수가 0-바위, i2가 생성한 난수가 1-보자기 혹은 i1 1-보자기, i2 0-바위 
-   //보자기가 바위를 이겼다
+    printf("보자기가 바위를 이겼다");
   }
   if ((i1 == 0 && i2 == 2) || (i1 == 2 && i2 == 0)) {
-    printf("\n\nRock beats Scissors");
-   //바위가 가위를 이겼다
+    printf("바위가 가위를 이겼다");
   }
   if ((i1 == 2 && i2 == 1) || (i1 == 1 && i2 == 2)) {
-    printf("\n\nScissors beats Paper");
-   //가위가 보자기를 이겼다
+    printf("가위가 보자기를 이겼다");
   }
   if (i1 == i2) {
     if (i1 == 0) {
-      printf("\n\nTie: Rock and Rock");
-   // 바위 바위 무승부
+      printf("바위 바위 무승부k");
     }
     if (i1 == 1) {
-      printf("\n\nTie: Paper and Paper");
-   // 보자기 보자기 무승부
+      printf("보자기 보자기 무승부");
     }
     if (i1 == 2) {
-      printf("\n\nTie: Scissors and Scissors");
-   // 가위 가위 무승부
+      printf("가위 가위 무승부");
     }
   }
  
 }
 
-    </script>
-</head>
-<body>
-
-</body>
-</html>
+</script>

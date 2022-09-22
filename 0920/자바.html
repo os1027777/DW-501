@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //루프문 (반복문)
+        //for , while, do~while
+        //while - for
+
+        // 초기값 , 조건식, 증강식
+
+        document.getElementById('result').innerHTML="aaa";
+
+
+
+function start(it){
+        var res = document.querySelector('#result')
+
+        var out = '';
+
+        var i=1;
+
+        var count= 0 ;
+
+      while(i<=10){
+        var coin = Math.floor(Math.random()*50)+1;
+
+        switch(coin %2){
+        case 0 :
+            switch(it){
+                case 'front':
+                    out += "앞면 , 정답<br>"; 
+                    count++; 
+                    break;
+                    case 'back':
+                        out += "앞면 , 오답<br>";  
+                        break;
+            }
+            break;
+            case 1:
+                switch(it){
+                    case 'front':
+                    out += "뒷면 , 오답<br>";    
+                    break;
+                    case'back':
+                    out += "뒷면 , 정답<br>"; 
+                    count++;
+                    break;
+                }
+                break;
+        }        
+        i++;
+    }//와일문 끝
+    out += "정답확률 :"+count*50 + '%'; // out = out +"a"
+        res.innerHTML = out;
+}
+
+//무한루프
+var k =1;
+while(true){
+    document.write("무한반복");
+    if(k == 500000) break;
+    k++
+}
+
+while(true){
+    var num = parseInt(prompt());
+    document.write(num + '<br>');
+    if (num == 0) break;
+}
+
+    </script>
+</head>
+<body>
+    <input type="number" id="num">
+    <button onclick="gugu()">규규단</button>
+    <hr></hr>
+    <div id="result"></div> 
+
+     <input type="button" value="앞면" onclick="start('front')">
+    <input type="button" value="뒷면" onclick="start('back')">
+
+    <div id="result1"></div>
+
+
+    <input type="number"id="row">
+    <input type="number"id="col">
+    <button onclick="make()">태이블생성</button>
+    <div id="result1"></div>
+
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 30px auto;
+            width: 90%;
+            height: 500px;
+            background-color: aqua;
+        }
+        .title h1{ 
+            text-align: center;
+            padding-top: 50px;
+
+        }
+        .row{
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+        .item{
+            border-radius: 10px;
+            background-color: brown;
+            padding: 2% 6%;
+            color: aqua;
+            text-align: center;
+        }
+        .item p{
+            font-size: 15pt;
+        }
+        .item h2 {
+            font-size: 44px;
+            font-weight: 500;
+            margin: 20px 0 40px;
+        }
+        .item h2 span{
+            font-size: 18px;
+        }
+        .item ul{
+            text-align: left;
+
+            margin: 20px 0;
+            color: aqua;
+        }
+        .item ul li{
+            margin: 15px 0;
+        }
+        .item button{
+            background: transparent;
+            background-color: black;
+            width: 100%;
+            padding: 14px 0;
+            color: #fff;
+            font-size: 15px;
+            
+            border: 1px solid red;
+            border-radius: 5px;
+            margin-top: 30px;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .item button:hover{
+            background-color: aquamarine;
+
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>choose your 퐁성규</h1>
+        </div>
+        <div class="row">
+            <div class="item">
+                <p>statet</p>
+                <h2>19$<span>month</span></h2>
+                <ul>
+                    <li>1 웹상이다</li>
+                    <li>10 기가 어쩌고 안</li>
+                    <li>아안아내안ㅇㄴㅁ</li>
+                    <li>ㄴㅇㅁㄴㅇㄴㅁㅇㄴ</li>
+                    <li>ㅁㄴㅇㄴㅁㅇㅁ</li>
+                    <li>ㅁㄴㅇㄴㅁㅇㅁㄴ</li>
+                </ul>
+            </div>
+            <div class="item"> 
+                 <p>statet</p>
+                <h2>19$<span>month</span></h2>
+                <ul>
+                    <li>1 웹상이다</li>
+                    <li>10 기가 어쩌고 ㅅ</li>
+                    <li>아안아내안ㅇㄴㅁ</li>
+                    <li>ㄴㅇㅁㄴㅇㄴㅁㅇㄴ</li>
+                    <li>ㅁㄴㅇㄴㅁㅇㅁㄴㅇ</li>
+                    <li>ㅁㄴㅇㄴㅁㅇㅁㄴ</li>
+                </ul>
+            </div>
+            <div class="item"> 
+                 <p>statet</p>
+                <h2>19$<span>month</span></h2>
+                <ul>
+                    <li>1 웹상이다</li>
+                    <li>10 기가 어쩌고ㅔㅅ</li>
+                    <li>아안아내안ㅇㄴㅁ</li>
+                    <li>ㄴㅇㅁㄴㅇㄴㅁㅇㄴ</li>
+                    <li>ㅁㄴㅇㄴㅁㅇㅁㄴㅇ</li>
+                    <li>ㅁㄴㅇㄴㅁㅇㅁㄴ</li>
+                    <
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    function make(){
+    var res = document.getElementById("result1");
+    var row = document.getElementById("row");
+    var col = document.getElementById("col");
+    
+    var out="";
+    var i=1;
+    out += "<table>";
+    while(i <=row.value){
+        out += "<tr>";
+            var k = 1;
+            while(k <=col.value){
+                out += "<td> a </td>";
+                k++;
+            }
+        out += "</tr>";
+  i++;
+}
+    out += "</table>";
+    res.innerHTML=out;
+    }
+</script>
+<style>
+    table tr td{
+        border: 1px solid black;
+        width: 50px;
+        height: 60px;
+        text-align: center;
+    }
+
+</style><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+        text-align: center;
+      }
+    </style>
+
+</head>
+<body>
+    <div>
+
+  <button onclick="main()">가위</button>
+  <button onclick="main()">바위</button>
+  <button onclick="main()">보</button>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ //      var i = 1;
+ //      while(i<=100){
+ //          if(i%4 ==0 && i %7 ==0)
+ //          document.write(i)
+ //      }
+ //      var k=1
+ //      while(k<=100){
+ //      if(k%(4*7)==0)
+ //      document.write(k)
+ //      k++
+ //  }
+ //  var i = 24;
+ //  while(i >=1){
+ //      if(24 % i == 0)
+ //      document.write(i)
+ //      i--;
+ //  }
+ //  var k =1;
+ //  while(k <=24){
+ //      if(24% k ==0)
+ //      document.write(k)
+ //      k--;
+ //  }
+ //  var num1 = 124,num2=96
+ //  var a = 1;
+ //  var smll= num1 < num2 ? num1: num2;
+ //  while(a <= small){
+ //      if(num1 % a ==0&&num2 % a == 0)
+ //      document.write(a)
+ //      a++ 
+ //  }
+ //  var m1 = 124, m2 =155;
+ //  var i = m1<m2?m1:m2;
+ //  while(a>=1){
+ //      if(m1%i == 0 && m2%i==0){
+ //          document.write('최대공약수 : '+i)
+ //          break;
+ //      }
+ //  }
+
+
+    //베스킨라빈스 31
+    var out = "user";//전역변수
+    var num31 = 0;//전역변수
+    var turn =true;//전역변수
+    var cnt =0;//전역변수
+
+    function input(){
+        if(cnt == 3){
+            alert("3번 입력했습니다. 입력완료를 눌러주세요");
+            return;//함수종료
+        }
+        var num = document.querySelector("#num")
+        if(num.value <= num31 || ( !turn && num.value > num31 +1)) {
+            alert("잘못입력했습니다. 패배..")
+            return;
+        }
+        turn = true;
+        num31 = num.value;
+        //편의 ui
+        num.value=""; //인풋 태그 값 지우기
+        num.focus();//해당 input 태그에 커서
+        cnt++;
+        out += num31 + "";
+
+        if(num31 ==31){
+            complete();
+        }
+    }
+    function complete(){
+        var res = document.querySelector("#result");
+        res.innerHTML = out; //user 출력
+        if(num31 ==31){
+            alert("패배하였습니다")
+            return;
+        }
+        //computer 숫자
+        var com = Math.floor(Math.random()*3) +1;
+        out += "<br> com : ";
+        var i=1;
+        while(i<=com){
+            out += ++num31 +" ";
+            if(num31 == 31)break;
+            i++;
+        }
+        res.innerHTML = out;
+        turn = false;
+
+        if(num31 == 31){
+            alert("컴퓨터 패배")
+        }
+        out+="<br> user :";
+        cnt = 0;
+    }
+    function check(){   
+        if(window.event.keyCode ==13)
+        input();
+        //alert(window.event.keyCode);
+
+    }
+    </script>
+</head>
+<body>
+    <div>
+    <input type="number"id="num" onkeydown="check()">
+    <input type="button" onclick="input()"value='입력'>
+    <input type="button" onclick="complete()" value="입력완료">
+</div>
+<hr>
+<div id="result"></div>
+</body>
+</html>
+
+</body>
+</html>   
+ <script>
+ function main() {
+
+  var i1 ; 
+  var i2 ;
+  i1 = rand() % 3; 
+  i2 = rand() % 3; 
+  if ((i1 == 0 && i2 == 1) || (i1 == 1 && i2 == 0)) {
+    printf("보자기가 바위를 이겼다");
+  }
+  if ((i1 == 0 && i2 == 2) || (i1 == 2 && i2 == 0)) {
+    printf("바위가 가위를 이겼다");
+  }
+  if ((i1 == 2 && i2 == 1) || (i1 == 1 && i2 == 2)) {
+    printf("가위가 보자기를 이겼다");
+  }
+  if (i1 == i2) {
+    if (i1 == 0) {
+      printf("바위 바위 무승부k");
+    }
+    if (i1 == 1) {
+      printf("보자기 보자기 무승부");
+    }
+    if (i1 == 2) {
+      printf("가위 가위 무승부");
+    }
+  }
+ 
+}
+
+</script>

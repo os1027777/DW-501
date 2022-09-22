@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+//1.기능을 정의한다.
+//2. 기능을 구현한다
+//3. 기능을 태스트한다
+
+    // 1.로또 번호를 입력한다
+    // 2.로또 번호를 랜덤으로 뽑는다
+    // 3.추첨한 로또 번호를 띄운다
+    // 4.로또번호와 추첨번호를 비교한다
+    // 5.당첨을 띄운다
+//함수(메소드) 이름을 작성할때는 동사로 한다
+//길수록 좋다
+//이름 처음엔 대문자가 아닌 소문자가 온다
+isSuccess = doCheckLottoNumber(first_number);
+if()
+function doCheckLottoNumber(){
+    var first_number = document.getElementById("첫번째").value
+    var first_number = document.getElementById("두번째").value
+    var first_number = document.getElementById("세번째").value
+    var first_number = document.getElementById("네번째").value
+    var first_number = document.getElementById("다섯번째").value
+    var first_number = document.getElementById("여섯번째").value
+ 
+}
+</script>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .lotto{
+        width: 500px;
+        margin: 50px auto;
+        background-color: aqua;
+    }
+
+</style>
+</head>
+<body>
+<div class="lotto" id="lotto">
+    <input id="first_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="too_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="thri_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="four_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="fif_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="six_number" type="text" placeholder="로또번호를 입력해주세요">
+ <div>
+    <button onclick="doCheckLottoNumber()">로또 확인버튼</button>
+</div> 
+   </div>
+   <div class="lotto">
+    <h2>화차별가제ㅐㅏㅣㅁ란ㅁ</h2>
+    <h3 id="result"> 23 23 2 323 2</h3>
+    <p id="rank">1등</p>
+   </div>
+
+</body>
+</html>
+<script>
+    function doCheckLottoNumber(number){
+        if(number < 1 || number > 45){
+            return false;
+        }
+        return true
+    }
+    function doCheckLottoNumber2(){
+var lotto =document.getElementById("lotto").children;
+console.log(lotto);
+console.log(lotto.length)
+for(var i=0;i<lotto.length;i++){
+    console.log(lotto[i].localName);
+    if(lotto[i].localName =="input"){
+            var value = lotto[i].value;
+            console.log(value);
+        }
+    }
+}
+</script>
