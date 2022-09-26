@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+isSuccess = doCheckLottoNumber(first_number);
+if()
+function doCheckLottoNumber(){
+    var first_number = document.getElementById("첫번째").value
+    var first_number = document.getElementById("두번째").value
+    var first_number = document.getElementById("세번째").value
+    var first_number = document.getElementById("네번째").value
+    var first_number = document.getElementById("다섯번째").value
+    var first_number = document.getElementById("여섯번째").value
+ 
+}
+</script>
+</head>
+<body>
+    <input id="first_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="too_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="thri_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="four_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="fif_number" type="text" placeholder="로또번호를 입력해주세요">
+    <input id="six_number" type="text" placeholder="로또번호를 입력해주세요">
+ <div>
+    <button onclick="doCheckLottoNumber()">로또 확인버튼</button>
+</div> 
+</body>
+</html>
+<script>
+    function doCheckLottoNumber(number){
+        if(number < 1 || number > 45){
+            return false;
+        }
+        return true
+    }
+    function doCheckLottoNumber2(){
+var lotto =document.getElementById("lotto").children;
+console.log(lotto);
+console.log(lotto.length)
+for(var i=0;i<lotto.length;i++){
+    console.log(lotto[i].localName);
+    if(lotto[i].localName =="input"){
+            var value = lotto[i].value;
+            console.log(value);
+        }
+    }
+}
+</script>

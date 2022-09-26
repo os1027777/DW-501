@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+        text-align: center;
+      }
+    </style>
+
+</head>
+<body>
+    <div>
+
+  <button id="가위" onclick="가위()">가위</button>
+  <button id="바위" onclick="바위()">바위</button>
+  <button id="보" onclick="보()">보</button>
+</div>
+
+
+</body>
+</html>   
+ <script> 
+
+
+
+  var i1 = Math.floor(Math.random()*3)+1;
+  var i2 = Math.floor(Math.random()*3)+1; 
+ 
+  function 보(){
+    var 보 = document.getElementById("보");
+    var i2 = Math.floor(Math.random()*3)+1; 
+    var i1 = Math.floor(Math.random()*3)+1;
+    if ((i1 == 1 && i2 == 2) || (i1 == 2 && i2 == 1)) {
+    alert("보자기가 바위를 이겼다"); 
+    if( i1 == 2 && i2 == 1)
+
+    if (i1 == 2) {
+      alert("보자기: 보자기 무승부");
+    }
+  }
+  }
+  function 바위(){
+ 
+    var i2 = Math.floor(Math.random()*3)+1; 
+   var i1 = Math.floor(Math.random()*3)+1;
+if ((i1 == 1 && i2 == 3) || (i1 == 3 && i2 == 1)) {
+    alert("바위가 가위를 이겼다"); 
+
+     if (i1 == i2) {
+    if (i1 == 1) {
+      alert("바위: 바위 무승부");
+    
+  }
+  }
+}
+  }
+  function 가위(){
+    var i2 = Math.floor(Math.random()*3)+1; 
+    var i1 = Math.floor(Math.random()*3)+1;
+if ((i1 == 3 && i2 == 2) || (i1 == 2 && i2 == 3)) {
+    alert("가위가 보자기를 이겼다");  
+
+      if (i1 == 3) {
+      alert("가위: 가위 무승부");
+
+    }
+  
+  }
+  }
+
+  
+  
+
+   
+
+ 
+
+
+</script>
