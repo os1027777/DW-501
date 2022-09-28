@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* .bingo{
+            border: 1px;
+            width:100px;
+        } */
+     
+    div{
+        width: 100px;
+        height: 100px;
+        border: 5px;
+       /* display: inline-table; */
+       display: inline-flex;
+        /* display: inline-block; */
+
+
+        text-align: center;
+        line-height: 100px;}
+
+
+    </style>
+</head>
+<body>
+            <script>
+                     var arr = new Array( 25); 
+                      //1,2,3,4,5,6,7,8,9,...25//
+                        for(var i=0;i<arr.length;i++) 
+                      
+                        arr[i] =i+1;  // 1,2,3,4,5,6,7,7,8,9,10
+            
+                        
+                        arr.sort(function(){return 0.5-Math.random()});  //랜돌려
+                    
+                                var arr2 = [];
+                                var tmp = 0; 
+                                var bingo = [];
+                       
+
+                        for(var i=0;i<arr.length;i++){
+                            bingo[i%5] = arr[i]; // 01234 / 01234/01234/01234/01234
+                              // 5개 씩 담기 
+                              if((i+1)%5==0){     
+                                arr2[tmp] = bingo;  // 섞어 
+                                tmp++; 
+                                bingo = []; //빙고 게임 판 담기 
+                              }
+                        }
+
+                        var output = "";
+                    
+                    for(var i = 0; i<arr.length;i++){
+                        if(i%5==0) {
+                                output += "<br>";  // 5마다띄우기
+                            }
+
+                        output += "<div id="+i+" onclick = 'Bingo(this)'>"+arr[i]+"</div>" 
+                        //console.log(arr[i]);
+                    }
+                    document.body.innerHTML = output;   // inner html 표현 
+
+
+
+                        function Bingo(obj){
+                            var number= document.getElementById(obj.id); 
+                        
+                            arr2[parseInt(obj.id/5)][obj.id%5] = 0; 
+                            number.style.backgroundColor = "Gray"; 
+                            number.innerHTML = ""; 
+                            
+                          
+                            BlackBingo(); 
+                        }
+            function BlackBingo(){
+                var row = 0; // 가로빙고
+                var col = 0; // 세로빙고
+                var cross = 0; // 대각선빙고
+
+                
+                for(i=0;i<arr2.length;i++){ // 
+                    var check = false;
+                    for(var j=0;j<arr2[i].length;j++){
+                        if(arr2[i][j]==0){
+                            check = true;
+                            console.log(arr2[i][j]);
+                        }else{
+                            check = false; 
+                            break;
+                        }
+                    }
+                    if(check) row++; // 빙고 카운트
+                }
+
+                for(i=0;i<arr2[0].length;i++){
+                      var check = false;
+                      for(var j=0;j<arr2[i].length;j++){
+                            if(arr2[j][i]==0){
+                              console.log(arr2[j][i]);
+                              check = true;
+                }else{
+                    check = false;
+                    break;
+                }
+            }
+            if(check) col++;  //빙고 카운트 
+        }
+        var right = 0; 
+        var left = 0; 
+
+        for(i=0;i<arr2[0].length;i++){
+            if(arr2[i][i]==0) right++; // 오른대각
+            if(arr2[arr2.length-i-1][i]==0)  left++;  // 왼대각
+            if(right==5 || left==5) cross++;
+        }
+        if(right==5 && left==5) cross++;
+        console.log(right);
+        console.log(left);
+         
+                    document.getElementById('bingoCount').innerHTML ="빙고갯수"+(cross+row+col);
+          
+                        
+        }
+
+         </script> 
+          <h1 id="bingoCount">빙고갯수</h1>
+                                    
+
+                        
+        
+</body>
+</html>

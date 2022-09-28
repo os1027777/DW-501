@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       window.onload = function () {
+        // onload는 브라우저에 출력된이후를 뜻함 window.onload는
+        // 브라우저에 모든 html이 출력된 이후
+        document.getElementById('docread').addEventListener('change', readFile);
+      };
+      async function readFile(e) {
+        var file = e.target.files[0]; // input 태그에서 선택한 파일 객체
+        if (!file) {
+          // 파일객체 존재유무
+          return; // 존재하지않으면 종료
+        }
+
+        var text = await file.text();
+      }
+        a = text.split("\n");
+    var a = Array();
+    function zzz(){
+        var dis =" ";
+        for (let i in a) {
+            dis += a[i]+"<br>";
+        }
+        document.querySelector("#a").innerHTML = dis
+
+    }
+    function search(){
+        var word = document.getElementById("word");
+        var name = word.value;
+    </script>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+      .srh_wrap{
+        display: flex;
+        margin-top: 10;
+        border: 1px solid black;
+        width: 200px;
+      }
+      .srh_wrap input{
+        border: 0;
+        outline: none;
+        width: 200px;
+      }
+    </style>
+</head>
+ <body>
+    <div>
+      <input type="file" id="docread" >
+    </div>
+    <div>
+      <input type="button"onclick="zzz()"value="전체리스트">
+
+      <div class="srh_wrap">
+      <input type="search"id='word'>
+      <span onclick="search()"> <i class="bi bi-steam"></i></span>
+    </div>
+    </div>
+    <div id="a"></div>
+  </body>
+</html>

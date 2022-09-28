@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 1000px;
+            height: 200px;
+            background-color: aqua;
+            margin: 0 auto;
+           
+        }
+        .pan{
+            width: 1000px;
+            margin: 0 auto;
+            height: 200px;
+            display: flex;
+            border: 1px solid rgb(250, 10, 250);
+        
+          
+        }
+        .hd{
+            
+            border: 1px solid rgb(12, 252, 252);
+
+            height: 200px;
+            width: 200px;
+        }
+        
+
+
+        
+
+    </style>
+</head>
+<body>
+  
+
+    
+
+    <div class="pan">
+        <div class="hd" id="don1" onclick="pan(1)"></div>
+        <div class="hd" id="don2" onclick="pan(2)"></div>
+        <div class="hd" id="don3" onclick="pan(3)"></div>
+        <div class="hd" id="don4" onclick="pan(4)"></div>
+        <div class="hd" id="don5" onclick="pan(5)"></div>
+
+
+    </div>
+    
+    <div class="pan">
+        <div class="hd" id="don6" onclick="pan(6)"></div>
+        <div class="hd" id="don7" onclick="pan(7)"></div>
+        <div class="hd" id="don8" onclick="pan(8)"></div>
+        <div class="hd" id="don9" onclick="pan(9)"></div>
+        <div class="hd" id="don10" onclick="pan(10)"></div>
+
+    
+    </div>
+    
+    <div class="pan">
+        <div class="hd" id="don11" onclick="pan(11)"></div>
+        <div class="hd" id="don12" onclick="pan(12)"></div>
+        <div class="hd" id="don13" onclick="pan(13)"></div>
+        <div class="hd" id="don14" onclick="pan(14)"></div>
+        <div class="hd" id="don15" onclick="pan(15)"></div>
+
+    
+    </div>
+    
+    <div class="pan">
+        <div class="hd" id="don16" onclick="pan(16)"></div>
+        <div class="hd" id="don17" onclick="pan(17)"></div>
+        <div class="hd" id="don18" onclick="pan(18)"></div>
+        <div class="hd" id="don19" onclick="pan(19)"></div>
+        <div class="hd" id="don20" onclick="pan(20)"></div>
+    
+    </div>
+    
+    <div class="pan">
+        <div class="hd"id="don21" onclick="pan(21)"></div>
+        <div class="hd"id="don22" onclick="pan(22)"></div>
+        <div class="hd"id="don23" onclick="pan(23)"></div>
+        <div class="hd"id="don24" onclick="pan(24)"></div>
+        <div class="hd"id="don25" onclick="pan(25)"></div>
+
+    
+    </div>
+
+      <div class=" main"></div>
+</body>
+</html>
+<script>
+
+
+
+
+    
+
+    function pan(id){ 
+    alert(id)
+  
+    for(var i=0; i<26; i++){  
+        var val = Math.floor(Math.random()*99)+1;
+        document.getElementById("don"+i)
+        
+       } 
+   
+}      
+       
+
+</script>
