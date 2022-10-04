@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var item_list = ["핸드폰거치대","급속충전기","c타입케일블","강화유리","스마트폰링","아무거나"];
+window.onload = function(){
+    var li = document.getElementsByClassName("item");
+    for(var i=0; i<li.length; i++);
+    li[i].innerHTML= item_list[i]
+
+    var name = document.getElementById("item+name");
+    var prop = name.value
+    var html = "<li>"+pro +"</li>"
+    item.push(html);
+
+    var ul = document.querySelector("#item_list")
+    var li = document.createElement("li");
+    var bt = document.createElement("button");
+    li.appendChild(bt)// 추가한다
+    bt.setAttribute("class","del_bt")
+    bt.setAttribute("onclick","del()")
+    bt.innerHTML = "삭제";
+    for (var i in item){
+        ul.appendChild(item[i]);    
+        document.createElement("li")
+    }
+
+}// 새 태그 (엘리먼트 요소 객체)를 생성하는 방법 : createElement()함수 
+// .setAttribute : 선택한 요소(element)의 속성(attribute) 값을 정합니다.
+//q
+function del(){
+
+}
+
+    </script>
+</head>
+<body>
+
+    <div id="wrap">
+        <h3>제품의 목록</h3>
+        <ul id="item">
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+            <li class="item"></li>
+        </ul>
+    </div>
+</body>
+</html>
