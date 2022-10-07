@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //total 함수 실행 > scort_input함수의 콜 멧 잉 변수값 토탈에 전달 
+        // > 토탈 함수에서 콜멧잉 의 합을 톳 변수에 저장 > 톳변수의 값 토탈 함수 실행 위치로 반환(r리턴)
+        //스코어 인풋 함수에서 토탈 함수로부터 반환된값 톳 변수에 저장 
+        //스코어 인풋 함수에서 아빙 함수 실행 
+        //스코어 인풋 함수의 톳 변수를 아빙 함수에 전달 
+        //아빙 함수에서 전달받은 데이터를 톳 변수에 저장
+        function score_innput(){
+            var kor = 99;
+            var mat = 89;
+            var eng = 79;
+           total(kor,mat,eng);
+
+           return{kor ,mat , eng}
+        }
+        function total(kor,mat,eng){
+            var tot = kor +mat + eng;
+            avg(tot)
+        }
+        function avg(tot){
+            var res = tot/3
+            result_print(res);
+
+        }
+        function result_print(res){
+            document.write("평균 :"+res)
+
+        }
+        
+
+
+        function number_input(){
+            var user = new Array();
+            var num = document.getElementsByClassName("num");
+            user.push(parseInt(num[0].value))
+            user.push(parseInt(num[1].value))
+            user.push(parseInt(num[2].value))
+            for(var i in num)num[i].value="";
+            num[0].focus()
+            if(input_check(user)){
+                alert("잘못된 숫자입력입니다")
+                return;
+            }
+            number_check(user);
+        }
+
+        function input_check(user){
+            for(var i in user){
+                if(user[i]<1||user[i]>9)
+                return true;
+            }
+            if(user[0] == user[1] || user[0] == user[2] || user[1] == user[2])
+            return true;
+
+            return false;
+        }
+
+
+        function number_check(u){
+        var strike = 0 , ball = 0;
+        if(u[0] == play[0]) strike++        
+        if(u[1] == play[1]) strike++        
+        if(u[2] == play[2]) strike++        
+        if(u[0] == play[1] || u[0] == play[2])    ball++      
+        if(u[1] == play[0] || u[1] == play[2])   ball++        
+        if(u[2] == play[0] || u[2] == play[1]) ball++        
+
+        print(strike, ball)
+    }
+     
+
+
+
+    function print(strike,ball){
+    var res = document.querySelector("#result")
+    var div = document.createElement("div");
+    var out = 3-strike-ball;
+    div. appendChild(document.createTextNode( strike+"스트라이크"+ball+"볼"+out+"아웃"));
+    res.prepend(div)
+}
+
+
+
+        var play = new Array()
+        window.onload = function(){
+    for(var i=0;i<3;) {
+        var tmp =  Math.floor(Math.random()*9)+1
+        if(play.indexOf(tmp)== -1){
+            play.push(tmp)
+            i++
+        }
+    }          
+    var bt = document.querySelector("#send") 
+    bt.addEventListener("click",number_input)
+        }
+
+
+
+    </script>
+    <style>
+
+        #input_wrap{
+            display: flex;
+            margin-left: 200px;
+            margin-top: 40px;
+        }
+        #send{
+            background-color: aqua;
+            width: 125px;
+            border-radius: 20px;
+            height: 35px;
+            margin-left: 5px;
+            margin-top: 5px;
+            border: 0;
+            cursor: pointer;
+            
+        }
+        #input_wrap input{
+            padding-top: 30px;
+            width: 150px;
+            margin-left: 10px;
+           
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="input_wrap">
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <input type="number" id="num3">
+        <button id="send" >입력</button>
+    </div>
+    <hr>
+    <div id="result"></div>
+
+    
+</body>
+</html>
