@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function new_window(){
+    var url = "10191.html"
+    var win_name = " "
+    var width=500, height=700
+    var left=Mwidth/2 -width/2
+    var top = Mheight/2 - height/2
+    var option ="width="+width+"height="+height+"left="+left+"top="+top
+    window.open("http://127.0.0.1:5500/10191.html"," _self","width=700,height=500")
+}
+window.open(url ,win_name,option)
+    </script>
+</head>
+<body>
+    <h2>첫번쨰 윈도우</h2>
+    <input type="text" name="name" id="name" placeholder="이름"
+    <button onclick="new_window()">새창열기</button>
+
+    <a href="http://127.0.0.1:5500/10191.html" target="_blank">이동</a>
+    <!--
+        width 새창의 너비 지정
+        left 모니터 화면 왼쪽에서부터 위치
+        top 모니터 화면 위쪽에서부터 위치
+        channelmode : 전체화면 (yes,no)
+        fullscreen 전체화면 
+        location 주소표시줄 표시여부
+        menubar 메뉴바 표시여부
+        scrollbars 스크롤바 표시여부
+        status 상태바 표시여부
+        resizable window 크기 변셩 가능 여부
+        toobat 툴바 표시여부
+    -->
+</body>
+</html>
