@@ -1,0 +1,14 @@
+INSERT INTO disease(diseaseno,	diseasename)
+VALUES ("J06","다발성 및 상세불명 부위의 급성 상기도감염"
+)
+
+ INSERT INTO disease(diseaseno,	diseasename)
+VALUES ("J39","상기도의 기타 질환"
+)
+ INSERT INTO disease(diseaseno,	diseasename)
+VALUES ("B34.2","상세불명 부위의 코로나바이러스감염"
+)
+
+ INSERT INTO disease(diseaseno,	diseasename)
+VALUES ("B97.2","다른 장에서 분류된 질환의 원인으로서의 코로나바이러스"
+)

@@ -1,0 +1,226 @@
+INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("135230" ,"삼성 서울병원" , "서울 강남구 일원로81 삼성서울병원"
+ )
+ 
+ INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("135710" ,"강남 세브란스병원" , "서울 강남구 언주로211 강남세브란스병원"
+ )
+ 
+  INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("134310" ,"중앙보훈병원" , "서울 강동구 진황도로 61길 53"
+ )
+ 
+  INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("143110 ","건국대학교병원" , "서울특별시 광진구 능동로 120-1"
+ )
+ 
+  INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("153040" ,"희명병원" , "서울특별시 금천구 시흥대로 244"
+ )
+ 
+   INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("609410" ,"세웅병원" , "부산광역시 금정구 서동로 162"
+ )
+    INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("616120" ,"부민병원" , "부산 북구 만덕대로 59"
+ )
+     INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("602020" ,"삼육부산병원" , "대티로 170"
+ )
+     INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("704314 ","삼일병원" , "대구 달서구 월배로 436"
+ )
+     INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("417821" ,"비에스종합병원" , "충렬사로 31"
+ )
+     INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("704340" ,"세강병원" , "대구 달서구 구마로 220"
+ )
+     INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("697310" ,"W병원" , "대구 달서구 달구벌대로 1632"
+ )
+      INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("705015" ,"드림병원" , "대구 남구 대명로 153"
+ )
+ 
+      INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("701010" ,"대구파티마병원" , "대구광역시 동구 아양로 99"
+ )
+ 
+      INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("406110" ,"인천적십자병원" , "인천광역시 연수구 원인재로 263 (연수동, 인천적십자병원)"
+ )
+ 
+      INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("409910" ,"백령병원" , "인천광역시 백령로 233"
+ )
+ 
+      INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("401071" ,"인천백병원" , "인천 동구 샛골로214"
+ )
+      INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("403223" ,"검단탑병원" , "서구 청마로19번길 5"
+ )
+ 
+      INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("404212" ,"온누리병원" , "서구 완정로 199"
+ )
+       INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("400120","인천기독병원","인천 중구 답동로 30번길 10"
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("506324","KS병원","광산구 왕버들로220"
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("503010","광주기독병원","광주광역시 남구 양림로 37"
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("500812","광주일곡병원","광주 북구 양일로 309"
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("306111","대전보훈병원","대덕구 대청로 82번길 147"
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("300141","대전한국병원","대전광역시 동구 동서대로 1672 "
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("031010","대전선병원","대전광역시 중구 목중로 29 대전선병원"
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("305312","유성선병원","북유성대로93"
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("680030","울산병원","울산 남구 월평로 171번길 13"
+ )
+        INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("689810","서울산보람병원","울주군 삼남읍 중평로 53"
+ )
+         INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("390811","의료법인명지의료재단명지병원","경기 고양시 덕양구 화수로14번길 55"
+ )
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("477834","HJ매그놀리아국제병원","경기도 가평군 설악면 미사리로 267-177 "
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("464813","참조은병원","광주대로 45"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("471030","원진녹색병원","경기도 구리시 동구릉로65"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("200120","강남병원","경기도 용인시 기흥구 중부대로 411"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("449830","용인세브란스병원","용인시 기흥구 동백죽전대로363"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("415012","뉴고려병원","경기도 김포시 김포한강3로 283"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("101110","히즈메디병원","김포시 김포대로 681"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("121212","정수병원","경기 남양주시 퇴계원읍 퇴계원로 20 엘병원"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("681181","박병원","평택시 송탄로 33"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("369816","현대병원","경기도 남양주시 진접읍 봉현로 21"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("370818","영동병원","충북 영동군 영동읍 대학로 106"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("000052","베스티안병원","충청북도 흥덕구 오송읍 오송생명1로 191"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("343816","당진종합병원","당진시 반촌로 5-15"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("323820","성요셉연합의원","부여군 부여읍 사비로 78"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("325820","서해병원","충남 서천군 서천읍 서천로 184"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("369816","현대병원","충남 아산시 시민로 388"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("340812","예산종합병원","충남 예산군 예산읍 금오대로 94"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("330011","천안우리병원","충청남도 천안시 동남구 남부대로 350 (청당동"
+ )
+ 
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("585810","고창병원","전북 고창군 고창읍 화신1길 9"
+ )
+ 
+          INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("530316","세안종합병원","전남 목포시 고하대로 795-2"
+ )
+           INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("590111","여천전남병원","전남  여수시 무선로 95"
+ )
+           INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("515817","장성병원","전남 장성군 장성읍 역전로 171"
+ )
+           INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("755810","봉화해성병원","봉화군 보밑길3 봉화해성병원"
+ )
+           INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("790310","포항성모병원","경상북도 포항시 남구 대잠동길 17"
+ )
+           INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("630520","삼성창원병원","창원시 마산회원구 팔용로 158"
+ )
+           INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("660320","반도병원","경남 진주시 남강로701"
+ )
+           INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("650020","통영적십자병원","경남 통영시 중앙로97"
+ )
+           INSERT INTO hospital(hospitalcode,	hospitalname,	hospitaladdress )
+VALUES ("690110","제주한라병원","도령로 65"
+ )
+ 
+ 
+ 
+ 

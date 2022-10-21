@@ -1,0 +1,119 @@
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("1","135230","012","2020-03-20","2020-03-27"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("2","135710","024","2020-04-10","2020-04-17"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("3","134310","035","2020-02-30","2020-03-04"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("4","143110","041","2020-04-21","2020-04-28"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("5","153040","055","2020-12-21","2020-12-28"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("6","609410","063","2020-09-13","2020-09-21"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("7","616120","079","2020-08-02","2020-08-09"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("8","602020","089","2020-01-11","2020-01-18"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("9","704314","093","2020-01-31","2020-02-07"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("10","417821","102","2020-06-01","2020-06-08"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("11","704340","115","2021-10-09","2021-10-16"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("12","697310","122","2021-02-10","2021-02-17"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("13","705015","139","2021-05-13","2021-05-21"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("14","701010","141","2021-08-15","2021-08-22"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("15","406110","158","2021-12-31","2022-01-07"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("16","409910","162","2021-03-03","2021-03-10"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("17","401071","177","2021-04-04","2021-04-11"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("18","403223","182","2021-05-05","2021-05-12"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("19","404212","191","2021-06-06","2021-06-13"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("20","400120","200","2021-07-07","2021-07-12"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("21","506324","218","2022-08-08","2022-08-15"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("22","503010","223","2022-09-09","2022-09-16"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("23","500812","234","2022-10-10","2022-10-17"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("24","306111","243","2022-11-11","2022-11-18"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("25","300141","251","2022-08-17","2022-08-24"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("26","031010","269","2022-06-24","2022-06-31"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("27","305312","277","2022-04-23","2022-04-30"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("28","680030","281","2022-07-21","2022-07-29"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("29","689810","295","2022-11-11","2022-11-18"
+)
+
+INSERT INTO patient (patientno,hospitalcode,coronicno,hospital_in,hospital_out)
+VALUES ("30","477834","308","2022-02-01","2022-02-08"
+)

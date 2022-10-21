@@ -1,0 +1,14 @@
+INSERT INTO vaccine(vaccinecode	vaccine_manufacturer)
+VALUES ("8806507011301","아스트라제네카"
+)
+
+ INSERT INTO disease(diseaseno,	diseasename)
+VALUES ("8806436061309","모더나"
+)
+ INSERT INTO disease(diseaseno,	diseasename)
+VALUES ("8806489035807","화이자"
+)
+
+ INSERT INTO disease(diseaseno,	diseasename)
+VALUES ("8806469025002","얀센"
+)
