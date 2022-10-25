@@ -1,0 +1,37 @@
+.h3-txt {
+    font-size: 1.3rem;
+    margin: 0.6rem 0/8rem;
+}
+
+.txt-white {
+    color: aqua;
+}
+
+/*
+    txt를 사용하면 편리하다
+*/
+.txt-pink {
+    color: pink;
+}
+
+.h2-txt {
+    font-size: 1.6rem;
+    margin: 0.6rem 0.3rem;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 90%;
+    padding: 5% 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+@media all and (min-width:780px){
+    html{font-size: 20px;}
+}
+@media all and (min-width:960px) {
+    html{font-size: 25px;}
+    
+}
