@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      id="name"
+      type="text"
+      placeholder="이름을 입력해주세요1"
+      value="뚱이"
+    />
+    <h3>해외 영화 검색하기</h3>
+    <input type="text" placeholder="검색어를 입력" />
+    <select id="type">
+      <option value="movie">movie</option>
+      <option value="series">series</option>
+      <option value="episode">episode</option>
+    </select>
+    <button onclick="">영화검색</button>
+  </body>
+  <!-- Jquery CDN download-->
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    //제이쿼리로 인풋 벨류 출력하기
+    var name2 = $('#name').val();
+    console.log('제이쿼리로 가져온 이름은 >' + name2);
+  </script>
+
+  <script>
+    //영화 사이트 key
+    // 상수값은 변수이름을 대문자로 작성한다
+    // 카멜표기법이 아닌 언더바로 표기한다
+    const API_KEY = 'cc4f54d9';
+    //영화 사이트 조회하기
+    function doSearch() {
+      // 검색 내용과 타입 가져오기 (제이쿼리로)
+      var search = $('#search').val();
+      var type = $('#type').val();
+      //ajax : 백엔드와 통신하기 위한 제이쿼리 메소드
+      // 에이젝스 , 아작스. 아약스 개발자 마다 다르게 부른다
+      // GET : 조회할 때 사용하는 type 중 하나
+      // dataType : 서버와 json 으로 주고 받겠다.
+      // success : 서버와 요청 성공시 실행!
+      $.ajax({
+        url:
+          'http://www.omdbapi.com/?apikey=' +
+          API_KEY +
+          '&s=' +
+          search +
+          '&type=' +
+          type +
+          '',
+        type: 'GET',
+        dataType: 'json',
+        success: function (response) {
+          console.log(response);
+
+          var movieTitle = response.search[0].title;
+          $('#year').append(response, search[0].Year);
+          $('#movieTitle').append(movietitle);
+          $('#movieId').append(response, search[0].imdID);
+
+          var html = '<img src="' + response.Search[0].Poster + '">';
+          $('#poster').append(html);
+        },
+      });
+    }
+  </script>
+</html>

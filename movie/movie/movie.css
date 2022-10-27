@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.container {
+  height: auto;
+  background-color: aqua;
+  margin: 50px auto;
+}
+.title {
+  text-align: center;
+  font-size: 42px;
+}
+
+.movie-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+.series-row {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  flex-basis: 17%;
+  cursor: pointer;
+}
+.poster {
+  width: 100%;
+  height: auto;
+}
+.title {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 22px;
+}
