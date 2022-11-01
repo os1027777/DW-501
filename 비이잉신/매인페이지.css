@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rebeccapurple;
+    height: 290px;
+    width: 100%;
+    
+}
+.container{
+    background-color: red;
+    height: 550px;
+}
+.footer{
+    background-color: aqua;
+    height: 129px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.ad{
+    background-color: yellow;
+    height:50px;
+    margin: 0 auto;
+    width: 1200px;
+}
+.name{
+    height:175px;
+    background-color: lightseagreen;
+    font-size: 80px;
+    text-align: center;
+    margin: 0 auto;
+    width: 1200px;
+}
+.title_bar{
+    background-color: cornsilk;
+    height: 70px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.typee{
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    float: left;
+}
+.senter{
+    display: flex;
+    justify-content:space-around;
+}
+.title_bar h3{
+    text-align: right;
+}
+.list{
+    background-color: pink;
+    height: 56px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.list li{
+    font-size: 25px;
+    margin-top: 10px;
+    list-style: none;
+    text-align: center;
+    width: 216px;
+
+
+}
+.main{
+    background-color: lightsteelblue;
+    height: 494px;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+    
+
+}
+
+.img{
+    height: 300px;
+    margin-top: 85px;
+    width: 18%;
+}
