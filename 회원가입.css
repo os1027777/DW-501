@@ -1,0 +1,60 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: aqua;
+}
+.head {
+  height: 250px;
+  background-color: rebeccapurple;
+}
+.img {
+  background-color: bisque;
+  height: 50px;
+}
+.title {
+  background-color: blue;
+  height: 160px;
+}
+.my {
+  background-color: antiquewhite;
+  height: 40px;
+}
+
+.div1 {
+  background-color: black;
+  width: 34%;
+  height: 720px;
+  display: flex;
+  float: left;
+}
+.div2 {
+  background-color: rgb(91, 13, 107);
+  width: 33%;
+  height: 720px;
+
+  display: flex;
+  float: left;
+}
+.div3 {
+  background-color: red;
+  width: 33%;
+  height: 720px;
+  display: flex;
+}
+.ster {
+  background-color: aqua;
+  height: 60px;
+}
+.input {
+  background-color: rgb(13, 126, 126);
+  height: 90%;
+  width: 100%;
+  padding: 0;
+  margin: 40px auto;
+}
+.input input {
+  width: 90%;
+  margin: 20px 10px 20px 20px;
+  padding: 8px;
+}
