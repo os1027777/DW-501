@@ -72,6 +72,7 @@ body {
 }
 .typee button {
   background: none;
+  cursor: pointer;
 }
 .title_bar button {
   width: 40px;
