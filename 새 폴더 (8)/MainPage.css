@@ -1,0 +1,394 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(70, 88, 83); */
+}
+#wrap {
+  width: 100%;
+  height: 100%;
+  /* background-image: url('구름.jpg');
+  /* background-repeat: repeat-x; */
+  /* background-size: 100% 100%; */
+  z-index: 100; 
+}
+a{
+  text-decoration:none;
+  color: black
+}
+a:hover{
+  color: #d31a1a;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(0, 0, 0); */
+}
+.span a {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  color: #b61717;
+}
+.msg{
+  color: #d31a1a;
+}
+.container {
+  height: 750px;
+  width: 100%;
+  /* background-color: rgb(0, 0, 0); */
+
+}
+.footer {
+  /* background-color: rgb(0, 0, 0); */
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.ad {
+  height: 80px;
+  margin: 0 auto;
+  width: 63%;
+}
+
+.ad img {
+  height: 80px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.name {
+  /*하얀색 로고 배경
+  빨간색 : 로고 폰트색
+*/
+  background-color: #ffffff;
+  font-size: 70px;
+  text-align: center;
+  margin: 0 auto;
+  width:  63%;
+  padding: 30px 0;
+  font-family:  fantasy;
+  color: #b61717;
+}
+.title_bar {
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  width: 63%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  border-bottom: 1px solid black;
+}
+.typee {
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  float: left;
+  width: 40%;
+  align-items: center;
+}
+
+.typee input {
+  /*
+  인풋 배경색
+  */
+  height: 25px;
+  background-color: rgb(240, 240, 240);
+  width:100%;
+}
+.typee button {
+  background: none;
+  cursor: pointer;
+}
+.title_bar button {
+  width: 40%;
+  height: 30px;
+  background-color: noasdasdsadasdsne;
+  border: 0px;
+  margin: 1%;
+}
+.senter {
+  display: flex;
+  justify-content: right;
+  font-size: 14px;
+  width: 63%;
+}
+.title_bar h3 {
+  text-align: right;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.list {
+  /*상단바 핑크색*/
+  background-color: rgb(255, 230, 232);
+  height: 56px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu_list a {
+  font-weight: 800;
+  font-size: 20px;
+  list-style: none;
+  text-align: center;
+  width: 20%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_list a:hover {
+  color: rgb(230, 29, 56);
+}
+
+.main {
+  /*배경 하얀색*/
+  background-color: #ffff;
+  height: 750px;
+  width: 63%;
+  margin: 0 auto;
+  justify-content: space-around;
+  display: flex;
+}
+.sub_main {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.img1 {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.imgs {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.img {
+  height: 300px;
+  margin-top: 25px;
+  width: 17.5%;
+  border-radius: 10px;
+  background:transparent
+}
+/*.img:hover{
+  flex-grow : 2.5;
+
+}*/
+
+.foot {
+  /* background-color: rgb(249, 229, 232); */
+  width: 63%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid black;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 800;
+  }
+/*@@추가@231232131232131232@*/
+a{
+  text-decoration: none;
+  color: black;
+}
+.img{
+  transition: all 0.3s linear;
+}
+.img:hover{
+  transform: scale(1.1);
+}
+/*asdfasdf*/
+.imgs img{
+  width: 100%;
+}
+
+
+/*2321323131232*/
+#menu{
+  width: 63%;
+  height: 80px;
+}
+#menu_list{
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 800;
+  width: 63%;
+  height: 80px;
+  display: flex;
+  justify-content:space-around;
+  background-color: rgb(249, 229, 232);
+}
+#menu_list li{
+  float: left;
+  height: 80px;
+  line-height: 80px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+#menu_list a{
+  font-size: 21px;
+  cursor: pointer;
+}
+#menu_list a:hover{
+  font-size: 23px;
+  cursor: pointer;
+  color: #b61717;
+}
+#menu_list li ul{
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: 0;
+  position: relative;
+  opacity: 0;
+  list-style: none;
+}
+#menu_list li ul li{
+  width: 0;
+  height: 0;
+  position: absolute;
+  line-height: 0;
+  font-size: 16px;
+}
+#menu_list li:hover ul{
+  position: relative;
+  opacity: 1;
+  background-color: rgb(131, 6, 25);
+  width: 63%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+#menu_list li:hover ul li{
+  position: relative;
+  background-color: rgb(243, 235, 235);
+  width:200px;
+  text-align: center;
+  line-height: 28px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+/* .list li {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 10px;
+  list-style: none;
+  text-align: center;
+  width: 216px;
+  cursor: pointer;
+}
+
+.hide{ display: none;} */
+
+
+
+ /* .list ul li {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 10px;
+  list-style: none;
+  text-align: center;
+  width: 219px;
+  cursor: pointer;
+  position:relative;
+}
+.d{float:left;}
+
+.list ul>li:hover {
+  color: rgb(230, 29, 56);
+}
+
+.list ul li ul{
+  position:absolute;
+  left:0;
+  top:0;
+  opacity: 0;
+  height:0;               
+  
+}
+.list ul li ul li{
+  position:absolute;
+  height:0;
+  top:0;
+  left:0;
+  font-size: 16px;
+  font-weight: ;
+  color: #000000;
+  
+}
+.list ul>li:hover ul{
+  position:relative;
+  opacity: 1;
+}
+.list ul>li:hover ul li{
+  position:relative;
+  height:27px;
+} */
+
+/* .main {
+  background-color: #ffff;
+  height: 750px;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+  display: flex;
+}
+
+.sub_main {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+.img1 {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.imgs {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.img {
+  height: 300px;
+  margin-top: 25px;
+  width: 17.5%;
+  border-radius: 10px;
+}
+.foot {
+  background-color: rgb(249, 229, 232);
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} */

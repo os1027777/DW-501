@@ -1,0 +1,433 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(70, 88, 83); */
+}
+.wrap {
+  width: 100%;
+  height: auto;
+  /* background-color: blue; */
+}
+
+.header {
+  height: auto;
+  width: 100%;
+  /* background-color: rgb(0, 0, 0); */
+}
+.span a {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  color: #b61717;
+}
+.container {
+  height: auto;
+  width: 100%;
+  /* background-color: rgb(0, 0, 0); */
+}
+.footer {
+  /* background-color: rgb(0, 0, 0); */
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+.foot {
+  /*검색창*/
+  /* background-color: rgb(249, 229, 232); */
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 800;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid black;
+}
+.ad {
+  height: 80px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.ad img {
+  height: 80px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.name {
+  /*하얀색 로고 배경
+  빨간색 : 로고 폰트색
+*/
+  background-color: #ffffff;
+  font-size: 70px;
+  text-align: center;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 30px 0;
+  font-family: fantasy;
+  color: #b61717;
+}
+.title_bar {
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  border-bottom: 1px solid black;
+}
+.typee {
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  float: left;
+  width: 300px;
+  align-items: center;
+}
+
+.typee input {
+  /*
+  인풋 배경색
+  */
+  height: 25px;
+  background-color: rgb(240, 240, 240);
+}
+.typee button {
+  background: none;
+  cursor: pointer;
+}
+.title_bar button {
+  width: 40px;
+  height: 30px;
+  background-color: noasdasdsadasdsne;
+  border: 0px;
+  margin: 1%;
+}
+.senter {
+  display: flex;
+  justify-content: right;
+  font-size: 14px;
+  margin-right: 30px;
+}
+.title_bar h3 {
+  text-align: right;
+  cursor: pointer;
+  padding: 0 15px;
+}
+/* .title_bar h3:hover {
+    color: rgb(202, 11, 11);
+  } */
+
+.c2 :hover {
+  color: rgb(202, 11, 11);
+}
+.list {
+  /*상단바 핑크색*/
+  background-color: rgb(255, 230, 232);
+  height: 56px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.list li {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 10px;
+  list-style: none;
+  text-align: center;
+  width: 216px;
+  cursor: pointer;
+}
+
+/* .list li:hover {
+  color: rgb(230, 29, 56);
+} */
+
+.main {
+  /*배경 하얀색*/
+  background-color: #ffff;
+  height: 750px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.sub_main {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 800;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding-top: 15px;
+}
+
+.bar {
+  margin-left: 20px;
+}
+.foot {
+  /* background-color: rgb(249, 229, 232); */
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main3 {
+  width: 400px;
+  height: 100pxs;
+  font-size: 17px;
+  font-weight: 900;
+  display: flex;
+  float: right;
+  line-height: 50px;
+  /* margin-top: 10px; */
+}
+
+.side {
+  color: purple;
+  /* margin: 0px 5px 0px 5px; */
+}
+
+.baguni {
+  width: 1200px;
+  height: 636px;
+  background-color: white;
+}
+.jong {
+  display: flex;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.basketdiv {
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  float: left;
+  font-size: 0.9375em;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+.basketdiv .row.head {
+  border-bottom: 2px solid #888;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  font-weight: 900;
+}
+.basketdiv .data {
+  border-bottom: 1px dashed #888;
+  box-sizing: border-box;
+  cursor: pointer;
+  float: left;
+  width: 100%;
+}
+.basketdiv .data .empty {
+  text-align: center;
+  padding: 12px 0;
+}
+.basketdiv .row.head .subdiv {
+  background-color: #f4f4f4;
+}
+.basketdiv .row > .subdiv {
+  display: block;
+  float: left;
+}
+.basketdiv .row > .subdiv:nth-child(1) {
+  width: 50%;
+}
+.basketdiv .row > .subdiv:nth-child(2) {
+  width: 40%;
+}
+.basketdiv .row > .subdiv:nth-child(3) {
+  width: 10%;
+}
+.basketdiv2 .row > .subdiv:nth-child(1) {
+  width: 60%;
+}
+.basketdiv2 .row > .subdiv:nth-child(2) {
+  width: 40%;
+}
+.basketdiv .row > div > div {
+  display: block;
+  float: left;
+  text-align: center;
+  margin: 0;
+  padding: 12px 0;
+}
+.basketdiv .row.data > div > div {
+  height: 60px;
+  line-height: 60px;
+}
+.basketdiv .data .num .updown {
+  color: #dc2a2a;
+  font-size: 1.8em;
+  letter-spacing: -5px;
+}
+.basketdiv .check {
+  width: 10%;
+}
+.basketdiv .check input[type='checkbox'] {
+  transform: scale(1.5);
+}
+.basketdiv .img {
+  width: 20%;
+}
+.basketdiv .pname {
+  width: 70%;
+}
+.basketdiv2 .pname {
+  width: 80%;
+}
+.basketdiv .basketprice {
+  width: 33%;
+}
+.basketdiv .num {
+  width: 33%;
+  min-width: 105px;
+}
+.basketdiv .sum {
+  width: 34%;
+  max-width: 80px;
+  color: #2424ed;
+}
+.basketdiv .point {
+  width: 50%;
+}
+.basketdiv2 .basketprice {
+  width: 25%;
+}
+
+.basketdiv2 .num {
+  width: 25%;
+}
+
+.basketdiv2 .sum {
+  width: 25%;
+  color: #0000aa;
+}
+
+.basketdiv2 .point {
+  width: 25%;
+}
+.basketdiv .basketcmd {
+  width: 100%;
+}
+.basketdiv .data .pname {
+  text-align: left !important;
+  line-height: 1.2 !important;
+}
+.basketdiv .data .price,
+.basketdiv .data .sum,
+.basketdiv .data .point {
+  text-align: right;
+}
+.baseform > tbody > tr > td:first-child {
+  width: 100px;
+}
+
+.buttongroup {
+  padding: 11px 0;
+  margin: 50px 0;
+}
+.narrowbuttongroup {
+  margin: 15px 0;
+}
+.buttongroup.center {
+  text-align: center;
+}
+.buttongroup input[type='text'],
+.buttongroup input[type='password'] {
+  height: 30px;
+}
+.buttongroup button,
+.buttongroup a {
+  margin-right: 5px;
+}
+.buttongroup button:last-child,
+.buttongroup a:last-child {
+  margin-right: 0;
+}
+
+.abutton,
+.abutton:link,
+.abutton:visited,
+.abutton:active,
+input[type='button'] {
+  background-color: #383838;
+  border: 1px solid #888888;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: -1px;
+  padding: 3px 7px;
+  margin: 2px 3px;
+  width: auto;
+  word-break: keep-all;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 0.939em;
+}
+
+.abutton-alt {
+  background-color: #d3e2c6;
+}
+
+.red {
+  color: #b00;
+}
+.blue {
+  color: #0075ff;
+}
+.basketrowcmd,
+.sumcount,
+.summoney {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.sumcount,
+.summoney {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.buttongroup {
+  text-align: center;
+}
+.buttongroup a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.cmd a,
+.cmd span {
+  padding: 12px 30px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #000;
+  background-color: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+.cmd.small a,
+.cmd.small span {
+  padding: 6px 20px;
+  font-size: 0.8125em;
+}
+
+.orderform .p_num {
+  text-align: right;
+  width: 40px;
+  font-size: 1em;
+}
+a{
+  text-decoration:none;
+  color: black
+}
+a:hover{
+  color: #d31a1a;
+}

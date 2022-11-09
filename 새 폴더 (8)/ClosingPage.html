@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOODBYE ADELAIDE</title>
+    <link rel="stylesheet" href="ClosingPage.css" type="text/css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+          <div class="ad">
+            <img src="SidePicture/header1.jpg" class="add" width="1200px" height="50px">
+          </div>
+  
+  
+          <div class="name">
+            <span class="span"><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/MainPage.html">ADELAIDE</a> </span>
+          </div>
+          <div class="title_bar">
+            <div class="typee">
+              <input type="text" name="chat" id="chat" />
+              <button onclick="searchPage()">🔍</button>
+              </div>
+          <div class="senter">
+              <h3 class="c1">비회원전용</h3>
+              <h3 class="c2"> <a href=" http://127.0.0.1:5500/adeliade/ShoppingPage/OrderCompleted.html">마이페이지</a></h3>
+              <h3 class="c3"><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/SoppingBasket.html" >장바구니</a>  </h3>
+              <h3 class="c4"> 고객센터</h3>
+            </div>
+        
+          </div>
+           <div class="list">
+            <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/PartySupplies.html" >파티용품</a>
+              <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/ValentineDay.html" >발렌타인 데이</a>
+                <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/HalloweenDay.html" >할로윈 데이</a>
+                  <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/PeperoDay.html" >빼빼로 데이</a>
+                    <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/Christmas.html" >크리스마스</a>
+        </div>
+        </div>
+
+
+        <div class="container">
+          <div class="main_ct">
+  
+          <div class="main1">
+          </div>
+  
+          <div class="main2">
+            <div class="coin" >
+              주문이 성공적으로 완료 되었습니다.( •̀ ω •́ )✧<br>
+              주문해 주셔서 감사합니다.(●'◡'●)
+            </div>
+
+  
+          </div>
+        
+  
+        <div class="main3">
+          <div class="side">
+            01 장바구니 > 
+          </div>
+          <div class="side2">
+            02 주문서 작성 >
+          </div>
+          <div class="side3">
+            03 주문완료
+          </div>
+          </div>
+  </div>
+        </div>
+        </div>
+
+
+        
+        <div class="footer">
+          <div class="foot">
+  온라인 고객센터: 010-7664-443x / 계좌번호:카카오뱅크 3333-07-1077906<br>
+  이용시간: 9:00 ~ 6:00	 <br> 
+  점심시간: 12:00 ~ 1:00(●'◡'●)	<br>
+  입금확인: 바로 확인 가능합니다. (*/ω＼*) <br>
+  ------------------------------------------------- <br>
+  전화주문 <br>
+  010-7664-443x
+  
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
+<script>
+
+  var menu={'파티용품':'PartySupplies' , '발렌타인데이':"ValentineDay",'할로윈데이':'HalloweenDay','빼빼로데이':'PeperoDay','크리스마스':'Christmas'};
+  function searchPage() {
+        let searchValue = document.getElementById('chat').value.trim();
+        if (searchValue !=  '')  {
+            location.href = "http://127.0.0.1:5500/ShoppingPage/" + menu[searchValue] + ".html";
+        } 
+        else{ 
+          alert('완전한 카테고리 단어로 적어주세요.');
+        } 
+    }
+</script>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADELAIDE BURKET</title>
+    <link rel="stylesheet" href="SoppingBasket.css" />
+    <link rel="stylesheet" href="main.js"/>
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="ad">
+                <img src="SidePicture/header1.jpg" class="add" width="1200px" height="50px">
+              </div>
+
+
+              <div class="name">
+                <span class="span"><a href="http://127.0.0.1:5500/ShoppingPage/MainPage.html">ADELAIDE</a> </span>
+              </div>
+
+          <div class="title_bar">
+            <div class="typee">
+                <input type="text" name="chat" id="chat" />
+                <button onclick="searchPage()">🔍</button>
+                </div>
+          <div class="senter">
+            <h3 class="c1 zed">비회원전용</h3>
+            <h3 class="c2"> <a href=" http://127.0.0.1:5500/adeliade/ShoppingPage/OrderCompleted.html">마이페이지</a></h3>
+            <h3 class="c3"><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/SoppingBasket.html" >장바구니</a>  </h3>
+            <h3 class="c4 zed" > 고객센터</h3>
+            </div>
+
+          </div>
+           <div class="list">
+            <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/PartySupplies.html" >파티용품</a>
+                <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/ValentineDay.html" >발렌타인 데이</a>
+                  <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/HalloweenDay.html" >할로윈 데이</a>
+                    <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/PeperoDay.html" >빼빼로 데이</a>
+                      <li><a href="http://127.0.0.1:5500/adeliade/ShoppingPage/Christmas.html" >크리스마스</a>
+        </div>
+        </div>
+        <div class="container">
+          <div class="main">
+            <div class="sub_main">
+                <div class="bar">
+                장바구니
+                </div>
+            </div>
+
+
+            <div class="main3">
+              <div class="side">
+                01 장바구니 > 
+              </div>
+              <div class="side2">
+                02 주문서 작성 >
+              </div>
+              <div class="side3">
+                03 주문완료
+              </div>
+              </div>
+
+              <form name="orderform" id="orderform" method="post" class="orderform" action="/Page" onsubmit="return false;">
+
+                <input type="hidden" name="cmd" value="order">
+                <div class="basketdiv" id="basket">
+                    <div class="row head">
+                        <div class="subdiv">
+                            <div class="check">선택</div>
+                            <div class="img">이미지</div>
+                            <div class="pname">상품명</div>
+                        </div>
+                        <div class="subdiv">
+                            <div class="basketprice">가격</div>
+                            <div class="num">수량</div>
+                            <div class="sum">합계</div>
+                        </div>
+                        <div class="subdiv">
+
+                            <div class="basketcmd">삭제</div>
+                        </div>
+                        <div class="split"></div>
+                    </div>
+
+                    <div class="row data">
+                        <div class="subdiv">
+                            <div class="check"><input type="checkbox" name="buy" value="260" checked="" onclick="javascript:basket.checkItem();">&nbsp;</div>
+                            <div class="img"><img src="Christmas/큐티 크리스마스 은박풍선 장식세트 에이 28000.jpg" width="60"></div>
+                            <div class="pname">
+                                <span>크리스마스 은박풍선 장식세트 에이</span>
+                            </div>
+                        </div>
+                        <div class="subdiv">
+                            <div class="basketprice"><input type="hidden" name="p_price" id="p_price1" class="p_price" value="20000">28000</div>
+                            <div class="num">
+                                <div class="updown">
+                                    <!-- <input type="text" name="p_num1" id="p_num1" size="2" maxlength="4" class="p_num" value="2" onkeyup="javascript:basket.changePNum(1);"> --> 1
+                                    <span onclick="javascript:basket.changePNum(1);"><i class="fas fa-arrow-alt-circle-up up"></i></span>
+                                    <span onclick="javascript:basket.changePNum(1);"><i class="fas fa-arrow-alt-circle-down down"></i></span>
+                                </div>
+                            </div>
+                            <div class="sum">28000</div>
+                        </div>
+
+                        <div class="subdiv">
+                            <div class="basketcmd"><a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delItem();">삭제</a></div>
+                        </div>
+                    </div>
+                    <div class="row data">
+                        <div class="subdiv">
+                            <div class="check"><input type="checkbox" name="buy" value="261" checked="" onclick="javascript:basket.checkItem();">&nbsp;</div>
+                            <div class="img"><img src="Christmas/크리스마스 모던파티 장식세트 레드 25000.jpg" width="60"></div>
+                            <div class="pname">
+                                <span>크리스마스 모던파티 장식세트 레드</span>
+                            </div>
+                        </div>
+
+                        <div class="subdiv">
+                            <div class="basketprice"><input type="hidden" name="p_price" id="p_price2" class="p_price" value="19000">25000</div>
+                            <div class="num">
+                                <div class="updown">
+                                    <!-- <input type="text" name="p_num2" id="p_num2" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(2);"> -->1
+                                    <span onclick="javascript:basket.changePNum(2);"><i class="fas fa-arrow-alt-circle-up up"></i></span>
+                                    <span onclick="javascript:basket.changePNum(2);"><i class="fas fa-arrow-alt-circle-down down"></i></span>
+                                </div>
+                            </div>
+                            <div class="sum">25000</div>
+                        </div>
+
+                        <div class="subdiv">
+                            <div class="basketcmd"><a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delItem();">삭제</a></div>
+                        </div>
+                    </div>
+                    <div class="row data">
+                        <div class="subdiv">
+                            <div class="check"><input type="checkbox" name="buy" value="262" checked="" onclick="javascript:basket.checkItem();">&nbsp;</div>
+                            <div class="img"><img src="Christmas/산타 컵케이크(대) 26900.jpg" width="60"></div>
+                            <div class="pname">
+                                <span>산타 컵케이크(대)</span>
+                            </div>
+                        </div>
+
+                        <div class="subdiv">
+                            <div class="basketprice"><input type="hidden" name="p_price" id="p_price3" class="p_price" value="15200">26900</div>
+                            <div class="num">
+                                <div class="updown">
+                                    <!-- <input type="text" name="p_num3" id="p_num3" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(3);"> -->1
+                                    <span onclick="javascript:basket.changePNum(3);"><i class="fas fa-arrow-alt-circle-up up"></i></span>
+                                    <span onclick="javascript:basket.changePNum(3);"><i class="fas fa-arrow-alt-circle-down down"></i></span>
+                                </div>
+                            </div>
+                            <div class="sum">26900</div>
+                        </div>
+                        <div class="subdiv">
+                            <div class="basketcmd"><a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delItem();">삭제</a></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right-align basketrowcmd">
+                    <a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delCheckedItem();">선택상품삭제</a>
+                    <a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delAllItem();">장바구니비우기</a>
+                </div>
+
+
+
+                <div id="goorder" class="">
+                    <div class="clear"></div>
+                    <div class="buttongroup center-align cmd">
+                        <a href=" http://127.0.0.1:5500/adeliade/ShoppingPage/ClosingPage.html">선택한 상품 주문</a>
+                    </div>
+                </div>
+            </form>
+
+            </div>
+          </div> 
+
+
+
+    </div>
+
+
+
+
+
+          </div>
+        <div class="footer">
+          <p class="p">
+          <div class="foot">
+          온라인 고객센터: 010-7664-443x / 계좌번호:카카오뱅크 3333-07-1077906<br>
+          이용시간: 9:00 ~ 6:00	 <br> 
+          점심시간: 12:00 ~ 1:00(●'◡'●)	<br>
+          입금확인: 바로 확인 가능합니다. (*/ω＼*) <br>
+  ------------------------------------------------- <br>
+          전화주문 <br>
+          010-7664-443x
+          </p>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
+<script>
+    var menu={'파티용품':'PartySupplies' , '발렌타인데이':"ValentineDay",'할로윈데이':'HalloweenDay','빼빼로데이':'PeperoDay','크리스마스':'Christmas'};
+    function searchPage() {
+          let searchValue = document.getElementById('chat').value.trim();
+          if (searchValue !=  '')  {
+              location.href = "http://127.0.0.1:5500/adeliade/ShoppingPage/" + menu[searchValue] + ".html";
+          } 
+          else{ 
+            alert('완전한 카테고리 단어로 적어주세요.');
+          } 
+      }
+  </script>
