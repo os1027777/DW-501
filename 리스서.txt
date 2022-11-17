@@ -1,0 +1,3 @@
+Spring 폴더 구조 
+- src/main/java: java소스만!
+- resources : html , css , js,image ,sql 파일
