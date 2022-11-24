@@ -1,0 +1,29 @@
+clear : 명령어 지우기
+pwd : 현재 내가 위치한 경로
+mkdir 이정수 :  이정수 폴더 생성
+ls : 현재 내 위치에 있는 폴더 파일 모두 보여주기
+cd (tab) : 폴더 찾기
+
+
+
+
+
+var jsonData = {
+	"클레스이름"
+	"클레스이름"
+	"클레스이름"
+};
+
+$.ajax({
+	url: "/api/vi/join",
+	type : "POST",
+	contentType : "application/json", // 서버에 json 타입으로 보낼 예정(요청)
+	data : JSON.stringify (jsonData),
+	dataType : "json",
+	success: function (response){
+	console.log(response);	
+}
+        });
+
+
+ 
