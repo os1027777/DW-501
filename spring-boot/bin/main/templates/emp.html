@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input id="empno" type="text" placeholder="사원번호를 입력하세요">
+<input id="ename"  type="text" placeholder="사원이름를 입력하세요">
+<input id="job"  type="text" placeholder="사원직책를 입력하세요">
+<input id="sal"  type="text" placeholder="사원급여를 입력하세요">
+<button type="button" onclick="join()">사원추가</button>
+
+<h3>사원삭제</h3>
+<input id="d_empno" type="text" placeholder="사원번호입력">
+<button type="button" onclick="doDelete()" >삭젱앙ㅇㅇㅇㅇ</button>
+
+<h3>사원수정</h3>
+<input id="u_empno" type="text" placeholder="사원번호입력">
+<input id="u_job"  type="text" placeholder="사원직책를 입력하세요">
+<input id="u_sal"  type="text" placeholder="사원급여를 입력하세요">
+		<button type="button" onclick="doUpdate()" >수정수정ㄹ수정</button>
+	<div id="data">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.js"
+	integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+	crossorigin="anonymous"></script>
+<script type="text/javascript">
+	callMyAPI();//함수 호출
+	
+	function callMyAPI(){
+		//ajax : 백엔드와 프론트가 통신하는 기능!
+		//type : GET == Controller에 GetMapping.
+		//dataType : return 데이터를 json으로 받음.
+		$.ajax({
+			url: '/api/v1/emp',
+			type: 'GET',
+	        dataType: 'json',
+	        success: function (response) {
+	        	console.log(response);
+	        	for (var i = 0; i < response.length; i++) {
+					var tr = $("<tr> </tr>");
+					
+					empno = $("<td>" + response[i].empno + "</td>");
+					ename = $("<td>" + response[i].ename + "</td>");
+					job = $("<td>" + response[i].job + "</td>");
+					sal = $("<td>" + response[i].sal + "</td>");
+					
+					tr.append(empno);
+					tr.append(ename);
+					tr.append(job);
+					tr.append(sal);
+					
+					$("#data").append(tr);
+	              }
+	        }
+		});		
+	}
+	
+	
+	function join(){
+		var empno = $("#empno").val();
+		var ename = $("#ename").val();
+		var job = $("#job").val();
+		var sal = $("#sal").val();
+		
+		var jsonData = {
+				"empno": empno,
+				"ename" : ename,
+				"job" : job,
+				"sal" : sal
+		};
+		   
+	    $.ajax({
+	    	url: "/api/v1/emp/join",
+	    	type : "POST",
+	    	contentType : "application/json", // 서버에 json 타입으로 보낼 예정(요청)
+	    	data : JSON.stringify(jsonData),
+	    	dataType : "json",
+	    	success: function (response){
+	    	console.log(response);
+	    	alert("정수이개세끼야");
+	    	location.reload();
+	        }
+	    });
+	}
+	
+	function doDelete(){
+		var empno = $("#d_empno").val(); 
+		if(empno == 0){
+			alert("사원번호 작성");
+			$("#d_empno").focus();
+			return false;
+		}
+			
+		function doDelete(){
+			var empno = $("#d_empno").val(); 
+			if(empno > 9999){
+				alert("사원번호 작성rr");
+				$("#d_empno").focus();
+				$("#d_empno").val("v");
+				return false;
+			}
+	
+			
+		}
+		
+	    $.ajax({
+	    	url: "/api/v1/emp/"+empno,
+	    	type : "DELETE",
+
+	    	dataType : "json",
+	    	success: function (response){
+	    	alert("djWjrjrhnjs");
+	    	location.reload();
+	        }
+	    });
+	}
+	
+	function doUpdate(){
+		
+		var empno = $("#u_empno").val();
+		var job = $("#u_job").val();
+		var sal = $("#u_sal").val();
+		
+		var jsonData = {
+				"empno": empno,
+				"job" : job,
+				"sal" : sal
+		};
+	
+		
+	    $.ajax({
+	    	url: "/api/v1/emp/",
+	    	type : "PATCH",
+	    	contentType : "application/json",
+	    	data : JSON.stringify(jsonData),
+	    	dataType : "json",
+	    	success: function (response){
+	    	alert("d외ㅏㄴ랴랴ㅐ어어아");
+	    	location.reload();
+	        }
+	    });
+	}
+	
+</script>
+
+</html>

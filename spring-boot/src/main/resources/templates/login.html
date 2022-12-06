@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>회원가입</h3>
+<input id="userId" type="text" placeholder="아이디">
+
+<button type="button"onclick="doCheck()">증복체크</button>
+
+<input id="userName" type="text" placeholder="이름">
+<input id="userPassword" type="password" placeholder="비밀">
+<button type="button" onclick="dojoin()">외원가입</button>
+
+<h3>이동</h3>
+<input id="i_userId" type="text" placeholder="아이디">
+<input id="i_userPw" type="password" placeholder="비빌">
+<button type="button" onclick="doLogin()">이동</button>
+
+
+<h3>사원삭제</h3>
+<input id="d_userId" type="text" placeholder="아이디">
+<button type="button" onclick="doDelete()" >삭젱앙ㅇㅇㅇㅇ</button>
+
+<h3>사원수정</h3>
+<input id="u_userId" type="text" placeholder="아이디">
+<input id="u_userName"  type="text" placeholder="이름">
+<input id="u_userPassword"  type="password" placeholder="비밀번호">
+		<button type="button" onclick="doUpdate()" >수정수정ㄹ수정</button>
+<div id="data">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.js"
+	integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+	crossorigin="anonymous"></script>
+<script type="text/javascript">
+ var ischeck = false;
+
+	        	
+function doCheck(){
+	var id = $('#userId').val();
+	
+	//dataType : return 데이터를 json으로 받음.
+	$.ajax({
+		url: '/api/v1/login/'+id,
+		type: 'GET',
+        dataType: 'json',
+        success: function (response) {
+        	if(response){
+        		alert("이미가입된 아이디");
+        		return false;
+        	}else{
+        		alert("사용가능한 아이디");
+        		ischeck = true;
+        		return false;
+        	}
+     		
+        }
+	});
+ }
+
+callMyAPI();//함수 호출
+
+function callMyAPI(){
+	//ajax : 백엔드와 프론트가 통신하는 기능!
+	//type : GET == Controller에 GetMapping.
+	//dataType : return 데이터를 json으로 받음.
+	$.ajax({
+		url: '/api/v1/login',
+		type: 'GET',
+        dataType: 'json',
+        success: function (response) {
+        	console.log(response);
+        	for (var i = 0; i < response.length; i++) {
+				var tr = $("<tr> </tr>");
+				
+				userId = $("<td>" + response[i].id + "</td>");
+				userPassword = $("<td>" + response[i].pw + "</td>");
+				userName = $("<td>" + response[i].name + "</td>");
+			
+				
+				tr.append(userId);
+				tr.append(userPassword);
+				tr.append(userName);
+			
+				
+				$("#data").append(tr);
+              }
+        }
+	});		
+}
+function dojoin(){	
+	
+	
+
+
+    let userId = $('#userId').val();
+    let userPassword = $('#userPassword').val();
+	let userName = $('#userName').val();
+  
+
+	
+    let arr =[userId,userPassword,userName];
+    const ARR = ["아이디","이름","비밀번호"];
+        
+    for(var i in arr){
+    	if(arr[i] == ''){
+    		alert(ARR[i] + "를입력해주세요");
+    		return;
+    	}
+    	
+    }
+    	var jsonData = 
+			    		{"id": userId,
+						"pw" : userPassword,
+						"name" : userName};
+    	 $.ajax({
+    	    	url: "/api/v1/users/join",
+    	    	type : "POST",
+    	    	contentType : "application/json", // 서버에 json 타입으로 보낼 예정(요청)
+    	    	data : JSON.stringify(jsonData),
+    	    	dataType : "json",
+    	    	success: function (response){
+    	    	console.log(response);
+    	    	alert("정수이개세끼야");
+    	    	location.reload();
+    	        }
+    	    });
+    	 }
+    	 
+    	 
+    	 function doLogin(){
+    		 
+    	
+    	  let i_userId = $('#i_userId').val();
+    	    let i_userPw = $('#i_userPw').val();
+    	
+    	  
+    	 
+    		var jsonData = 
+    		{"id":i_userId,
+			"pw" : i_userPw
+			};
+    		
+    	 $.ajax({
+ 	    	url: "/api/v1/login",
+ 	    	type : "POST",
+ 	    	contentType : "application/json", // 서버에 json 타입으로 보낼 예정(요청)
+ 	    	data : JSON.stringify(jsonData),
+ 	    	dataType : "json",
+ 	    	success: function (response){
+ 	    	console.log(response);
+ 	    	alert("정수이개세끼야asdasdsad");
+ 	    	location.reload();
+ 	    	if(response){
+ 	    		location.href = "/users";
+ 	    		
+ 	    	}else{
+ 	    		alert("아이디");
+ 	    	}
+ 	        } 
+ 	    	
+ 	    });
+   }
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+  
+    			function doDelete(){
+    				var userId = $("#d_userId").val(); 
+    		
+    			
+    		    $.ajax({
+    		    	url: "/api/v1/users/"+userId,
+    		    	type : "DELETE",
+    		    	dataType : "json",
+    		    	success: function (response){
+    		    	alert("삭제!!");
+    		    	location.reload();
+    		        }
+    		    });
+    		}
+    		
+    		
+    		
+    		function doUpdate(){
+    			
+    			var userId = $("#u_userId").val();
+    			var userName = $("#u_name").val();
+    			var userPassword = $("#u_userPassword").val();
+    			
+    			var jsonData = {
+    					"u_userId": u_userId,
+    					"u_name" : u_name,
+    					"u_userPassword" : u_userPassword
+    			};
+    		
+    			
+    		    $.ajax({
+    		    	url: "/api/v1/users/",
+    		    	type : "PATCH",
+    		    	contentType : "application/json",
+    		    	data : JSON.stringify(jsonData),
+    		    	dataType : "json",
+    		    	success: function (response){
+    		    	alert("d외ㅏㄴ랴랴ㅐ어어아");
+    		    	location.reload();
+    		        }
+    		    });
+    		}
+
+    
+
+	
+    	 
+</script>
+</html>

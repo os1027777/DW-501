@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.EmpMapper">
+	
+	<select id="selectEmp" resultType="com.example.demo.vo.EmpVO">
+	SELECT *FROM emp
+	</select>
+	
+	<select id="selectDept" resultType="com.example.demo.vo.DeptVO">
+		SELECT * FROM dept
+	</select>
+	
+	<select id="selectUsers" resultType="com.example.demo.vo.UsersVO">
+		SELECT * FROM users
+	</select>
+	
+	
+	<insert id="insertEmp">
+		INSERT INTO emp
+	(
+		empno,
+		ename,
+		job,
+		sal
+	
+	)
+	VALUES
+	(
+		#{empno},
+		#{ename},
+		#{job},
+		#{sal}
+	)
+	</insert>
+		<insert id="insertDept">
+		INSERT INTO dept
+	(
+		deptno,
+		dname
+	
+	
+	)
+	VALUES
+	(
+		#{deptno},
+		#{dname}
+	)
+	</insert>
+	
+	<delete id="deleteEmp">
+DELETE FROM emp
+WHERE empno = #{empno}
+</delete>
+
+	<delete id="deleteDept">
+DELETE FROM dept
+WHERE deptno = #{deptno}
+</delete>
+	
+	<update id="updateEmp">
+		UPDATE emp
+		SET
+			sal = #{sal},
+			job = #{job}
+			WHERE empno = #{empno}
+	
+	</update>
+	<insert id="insertUsers">
+	INSERT INTO users
+	(
+		id,
+		pw,
+		name
+	)
+	VALUES
+	(
+		#{id},
+		#{pw},
+		#{name}
+	
+	)
+	
+	
+	</insert>
+	
+	<!-- 카운트는 인트형으로 리턴 -->
+	<select id="selectUsersFindById" resultType="integer">	
+	SELECT 
+	COUNT(*) 
+ FROM users
+  WHERE id = #{id}
+ <if test="pw != null">
+  AND pw = #{pw}
+ </if>
+	</select>
+	
+	<update id="updateUsers">
+		UPDATE users
+		SET
+			name = #{name},
+			id = #{id},
+			WHERE pw = #{pw}
+	
+	</update>
+
+	<delete id="deleteUsers">
+DELETE FROM users
+WHERE id = #{id}
+</delete>
+<select id="selectUsersPassword" resultType="com.example.demo.vo.UsersVO">
+SELECT
+id,
+pw
+FROM users
+WHERE id = #{id}
+
+</select>
+</mapper>
