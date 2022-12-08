@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+
+
+
+
+
+
+
+<appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<prudent>true</prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>c:/logs/log.%d{yyyy-MM-dd}.log</fileNamePattern>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder>
+			<pattern>%d{yyyy.MM.dd HH:mm:ss} : [%-5level : %thread] [%F]%M\(%L\) - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+
+
+
+
+
+	<!--appender 는 로그를 제공할 방법 (파일,메일,콘솔)  -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+       	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%d{yyyy-MM-dd HH:mm:ss}] %-5level %logger{36} - %msg%n</Pattern>
+        </layout>
+    </appender>
+    
+    <root level="INFO">
+		<appender-ref ref="STDOUT" />	
+	</root>
+    
+    <logger name="com.dw.login.mapper" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="dailyRollingFileAppender" />
+    </logger>
+    
+</configuration>
