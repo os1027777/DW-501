@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>사원 목록</h3>
+<input id="Id" type="text" placeholder="아이디">
+<input id="Name" type="text" placeholder="이름">
+<input id="Password" type="password" placeholder="비밀">
+<button type="button" onclick="dojoin()">외원가입</button>
+
+<div id="data">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js"
+	integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+	crossorigin="anonymous"></script>
+<script type="text/javascript">
+callMyAPI();
+
+function callMyAPI(){
+	
+	$.ajax({
+		url: '/api/v1/emp',
+		type: 'GET',
+        dataType: 'json',
+        success: function (response) {
+        	console.log(response);
+        	for (var i = 0; i < response.length; i++) {
+				var tr = $("<tr> </tr>");
+				
+				empno = $("<td>" + response[i].empno + "</td>");
+				ename = $("<td>" + response[i].ename + "</td>");
+				job = $("<td>" + response[i].job + "</td>");
+				sal = $("<td>" + response[i].sal + "</td>");
+				
+				tr.append(empno);
+				tr.append(ename);
+				tr.append(job);
+				tr.append(sal);
+				
+				$("#data").append(tr);
+              }
+        }
+	});		
+}
+
+
+
+
+function join(){
+	var empno = $("#empno").val();
+	var ename = $("#ename").val();
+	var job = $("#job").val();
+	var sal = $("#sal").val();
+	
+	var jsonData = {
+			"empno": empno,
+			"ename" : ename,
+			"job" : job,
+			"sal" : sal
+	};
+	   
+    $.ajax({
+    	url: "/api/v1/emp/join",
+    	type : "POST",
+    	contentType : "application/json", // 서버에 json 타입으로 보낼 예정(요청)
+    	data : JSON.stringify(jsonData),
+    	dataType : "json",
+    	success: function (response){
+    	console.log(response);
+    	alert("정수이개세끼야");
+    	location.reload();
+        }
+    });
+}
+
+
+
+
+
+
+
+
+</script>
