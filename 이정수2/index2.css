@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+div {
+    position: relative;
+    animation-name: cat;
+    animation-duration: 52232s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: auto;
+    height: auto;
+    display: flex;
+  }
+  h3{
+    border: solid;
+        margin: auto;
+        padding: 1%;
+        color: black;
+        margin: 0 auto;
+        width: 120px;
+      }
+  @keyframes cat {
+    0%   {left:0px; top:0px;}
+    5%   {left:34px; top:2110px; right: 200px;bottom: 20%;}
+    10%   {left:5233px; top:10px; right: 2050px;bottom: 20%;}
+    15%   {left:1101px; top:410px; right: 30px;bottom: 210%;}
+    20%   {left:110px; top:910px; right: 100px;bottom: 230%;}
+    25%   {left:710px; top:20px; right: 500px;bottom: 204%;}
+    30%   {left:1520px; top:0px; right: 600px;bottom: 20%;}
+    35%   {left:0px; top:1600px; right: 1000px;bottom: 20%;}
+    40%   {left:1445px; top:120px; right: 500px;bottom: 220%;}
+    45%   {left:810px; top:1220px; right: 200px;bottom: 220%;}
+    50%   {left:0px; top:220px; right: 200px;bottom: 20%;}
+    55%   {left:120px; top:620px; right: 2100px;bottom: 220%;}
+    60%   {left:1470px; top:0px; right: 200px;bottom: 20%;}
+    65%   {left:340px; top:45px; right: 2100px;bottom: 206%;}
+    70%   {left:20px; top:1340px; right: 200px;bottom: 20%;}
+    75%   {left:630px; top:120px; right: 200px;bottom: 230%;}
+    80%   {left:2100px; top:2010px; right: 1200px;bottom: 320%;}
+    85%   {left:110px; top:450px; right: 2010px;bottom: 20%;}
+    90%   {left:1000px; top:555px; right: 200px;bottom: 120%;}
+    95%   {left:10px; top:0px; right: 2010px;bottom: 20%;}
+    100%   {left:2220px; top:2450px; right: 200px;bottom: 240%;}
+    
+    }
+
+    .jb {
+        box-sizing: border-box;
+        width: 120px;
+        height: 64px;
+        margin: 10px 0px;
+        background-color: black;
+        border-radius: 100%;
+        transition: all ease 2s 0s;
+    }
+    input:checked ~ .jb {
+        width: 130px;
+        height: auto;
+        border-radius: 0;
+        background-color: white;
+        text-align: center;
+      
+    }
+    a {
+        color:black;
+        text-decoration: none;
+      
+      }
+    a:-webkit-any-{
+        color: #980000;
+        text-decoration: none;
+    }
+    a:visited {
+        color : black;
+        text-decoration: none;
+      }

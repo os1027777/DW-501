@@ -1,0 +1,46 @@
+body {
+    margin: 0;  
+    padding: 0;
+    background: linear-gradient(120deg, #f5adad, #ff00aa);
+    height: 100vh;
+    overflow: hidden;   
+    box-sizing: border-box;
+    }
+    #box{
+        width: 100%;
+        height: 100%;
+        border: solid;
+        display: flex;
+    }
+    h1{
+        border: solid;
+        font-family: fantasy;
+        margin: auto;
+        padding: 1%;
+        color: black;
+        
+    }
+    h1 > a {
+        color:black;
+        text-decoration: none;
+        
+      }
+    a:-webkit-any-{
+        color: #980000;
+        text-decoration: none;
+    }
+    a:visited {
+        color : black;
+      }
+
+#hi{
+    width: 100%;
+    height: auto;
+    border: solid;
+    display: flex;
+    position: sticky;
+top: var(--gdn-header, 0px);
+margin: 0 auto;
+width: 100%;
+height: calc((100vh - var(--gdn-header, 0px) - var(--gdn-footer, 0px)));
+}
