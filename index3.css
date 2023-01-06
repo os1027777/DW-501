@@ -1,0 +1,146 @@
+@import "compass/css";
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  background: #CB4B16;
+  border-radius: 80%;
+  backface-visibility: hidden;
+} .jb {
+  box-sizing: border-box;
+  width: 120px;
+  height: 64px;
+  margin: 10px 0px;
+  background-color: black;
+  border-radius: 100%;
+  transition: all ease 2s 0s;
+  text-align: center;
+} 
+input:checked ~ .jb {
+  width: 130px;
+  height: auto;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+h3{
+  text-decoration: none;
+  color: black;
+  
+}
+.ball1 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 0.9px))
+    translateY(calc(var(--mouse-y) * 0.6px));
+  background: rgb(17, 243, 103);
+  text-align: center;
+  transition: all ease 4s 0s;
+}
+
+.ball2 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 1px))
+    translateY(calc(var(--mouse-y) * 0.2px));
+  background: rgb(238, 83, 66);
+  transition: all ease 2s 0s;
+}
+.ball3 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 2px))
+    translateY(calc(var(--mouse-y) * 0.5px));
+  background: rgb(74, 106, 248);
+  transition: all ease 3s 0s;
+}
+.ball4 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 1.2px))
+    translateY(calc(var(--mouse-y) * 1.7px));
+  background: rgb(220, 108, 211);
+  transition: all ease 5s 0s;
+}
+.ball5 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 4px))
+    translateY(calc(var(--mouse-y) * 2px));
+  background: rgb(240, 23, 196);
+  transition: all ease 6s 0s;
+}
+.ball6 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 2px))
+    translateY(calc(var(--mouse-y) * -0.2px));
+  background: rgb(33, 6, 32);
+  transition: all ease 9s 0s;
+}
+.ball7 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 2px))
+    translateY(calc(var(--mouse-y) * 4px));
+  background: rgb(39, 166, 213);
+  transition: all ease 10s 0s;
+}
+.ball8 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 5px))
+    translateY(calc(var(--mouse-y) * 1px));
+  background: rgb(193, 230, 28);
+  transition: all ease 11s 0s;
+}
+.ball9 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 2px))
+    translateY(calc(var(--mouse-y) * 2px));
+  background: rgb(244, 135, 11);
+  transition: all ease 12s 0s;
+}
+.ball0 {
+  size: 100px;
+  border-radius: 80%;
+  height: 100px;
+  width: 100px;
+  transform:
+    translateX(calc(var(--mouse-x) * 1px))
+    translateY(calc(var(--mouse-y) * 3px));
+  background: rgb(255, 12, 12);
+  transition: all ease 13s 0s;
+}
