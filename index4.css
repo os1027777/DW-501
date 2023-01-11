@@ -1,0 +1,18 @@
+#container {
+  position:absolute;
+  background-color:#abc;
+  left:50px;
+  width:90px;
+  height:90px;
+  margin:5px;
+}
+#menu {
+  position:absolute;
+  background-color:#000000;
+  width:10px;
+  height:90px;  
+}
+body{
+    width: 1200px;
+    height: 1200px;
+}
