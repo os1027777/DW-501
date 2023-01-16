@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ami{
+    width: auto;
+    height: auto;;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    border: 3px solid black;
+    text-align: center;
+    
+}
+.name{
+    font-size: 28px;
+    text-align: center;
+    display: flex;
+    width: 120px;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+.name:hover{
+    background-color: black;
+    color: white;
+}
+.scroll_move{
+    background-color: black;
+    color: white;
+    width: 100%;
+    font-size: 28px;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    border: 2px solid black;
+
+    
+}
+.not{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+}
+.main{
+
+    width: 100%;
+    height: auto;
+    
+}
+.home{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items : center;
+    justify-content: space-around
+
+}
+.about{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+
+}
+.mystory{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+.skill{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items : center;
+    justify-content: space-around;
+}
+.project{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+.contact{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+.home_img{
+    width: 30%;
+    height: 60%;
+    background-color: blue; 
+    display: flex;
+    float: left;
+    border-radius: 11%;
+
+}
+.img1{
+    width: 100%;
+    height: 100%;
+    border-radius:10%;
+  
+}
+.main_text{
+    width: 35%;
+    float: left;
+}
+.hom{
+    padding: 10%;
+    border: 5px solid black;
+    width: 400px;
+    height: 1;
+    display: flex;
+    justify-content: center;
+}
+/* 임시 위드값*/
+.wid{
+    width: 199px;
+    height: 50px;
+}
+.main_about{
+width: 1200px;
+}
+.about_text{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.about_ser{
+    text-align: center;
+}
+.hr{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.dor{
+    width: 190px;
+    height: 400px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.dor1{
+    border:  5px solid aquamarine;
+}
+.dor2{
+    border:  5px solid red;
+}
+.dor3{
+    border:  5px solid orange;
+}
+.dor4{
+    border:  5px solid purple;
+}
+.dor5{
+    border:  5px solid violet;
+}
+.dor_title{
+    height: 70px;
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dor_sub{
+    height: 330px;
+    font-weight: 1000;
+    font-size: 23px;
+    align-items : center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+.dor_sub1{
+    background-color: rgb(3, 233, 157);
+}
+.dor_sub2{
+    background-color: red;
+}
+.dor_sub3{
+    background-color: orange;
+}
+.dor_sub4{
+    background-color: purple;
+}
+.dor_sub5{
+    background-color: violet;
+}
+.cor1{
+  color: rgb(3, 233, 157);
+}
+.cor2{
+  color: red;
+}
+.cor3{
+    color: orange;
+  }
+.cor4{
+  color:purple;
+}
+.cor5{
+    color: violet;
+}
+.project1{
+    width: 100%;
+    height: 50%;
+    font-size: 30px;
+}
+.project2{
+    width: 100%;
+    height: 50%;
+    font-size: 30px;
+}
+a:hover{
+    color: white;
+    background-color: black;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+a {
+    color:black;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10%;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    
+}
+/*스크롤 브드릅게*/
+html { 
+    scroll-behavior: smooth; 
+  } 
+
+div{
+    font-family: ui-sans-serif,
+     -apple-system, BlinkMacSystemFont, 
+     "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif,
+     "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.git{
+    width: 100px;
+    height: 100px;
+}
+.git2{
+    color:black;
+    text-decoration: none;
+    border-radius: 10%;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    width: 100px;
+    height: 100px;
+}
+.email{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items : center;
+}
+#div5{
+    width: 450px;
+    height: 700px;
+    display: flex;
+}
+table{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: aqua;
+    border: 1px solid black;
+}
+td tr table{
+    border: 1px solid black;
+}
+tr{
+    width: 10px;
+    height: 20px;
+    background-color: beige;
+}
+.td{
+    width: 50px;
+    height: 20px;
+}
+
+/* 반응형 */
+@media all and (max-width:1000px ) {
+    .skill{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+    .dor1{
+        min-height: 0;
+    }
+    .dor{
+        width:100%;
+    }
+    .contact{
+        width: 100%;
+        height: auto;
+    }
+    .main_about{
+        width: 100%;
+        text-align: center;
+    }
+    .about{
+        width: 100%;
+        height: 100%;
+    }
+    hr{
+        width: 100%;
+    }
+    .project1{
+        width: 100%;
+    }
+    .project2{
+        width: 100%;
+    }
+    .home{
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .hom{
+        width: 100%;
+    }
+    .sog{
+        font-size: 25px;
+    }
+    .home_img{
+        width: 40%;
+        height: 30%;
+    }
+}
+@media all and (max-width:700px ){
+
+}
