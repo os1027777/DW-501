@@ -1,16 +1,32 @@
-var $circle = $('.circle');
+var docStyle = document.documentElement.style;
 
-function moveCircle(e) {
-  TweenLite.to($circle, 0.3, {
-    css: {
-      left: e.pageX,
-      top: e.pageY
-    }
-  });
-}
+document.addEventListener('mousemove', function(e) {
+  docStyle.setProperty('--mouse-x', e.clientX);
+  docStyle.setProperty('--mouse-y', e.clientY);
+});
 
-$(window).on('mousemove', moveCircle);
+document.getElementById("js").onclick = function () {
+  alert("1");
+};
 
-function hi(){
+const myButton = document.getElementById("jg");
+
+myButton.addEventListener('click', () => {
+  let randomBrightColor = () => {
+    let color_r = Math.floor(Math.random() * 127 + 128).toString(16);
+    let color_g = Math.floor(Math.random() * 127 + 128).toString(16);
+    let color_b = Math.floor(Math.random() * 127 + 128).toString(16);
+    return `#${color_r+color_g+color_b}`;
+  }
   
+  for(td of document.getElementsByTagName('body',)){
+    td.style.backgroundColor = randomBrightColor();
+  }
+});
+
+document.getElementById("jp").onclick = function () {
+ this.addEventListener(" transform: scaleX(-1)");
 }
+
+
+

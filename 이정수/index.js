@@ -1,9 +1,4 @@
-function hi(){
-    for(var i=0;i>100;i++){
-        if(i == i){
-            alert("hi")
-        }
-        return i = 0;
-    }
-    
-}
+document.getElementById("hi").onclick = function () {
+    this.addEventListener("  transform: scaleX(-1)");
+   }
+   

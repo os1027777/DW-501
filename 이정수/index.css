@@ -39,8 +39,7 @@ body {
     border: solid;
     display: flex;
     position: sticky;
-top: var(--gdn-header, 0px);
-margin: 0 auto;
-width: 100%;
-height: calc((100vh - var(--gdn-header, 0px) - var(--gdn-footer, 0px)));
+    top: var(--gdn-header, 0px);
+    margin: 0 auto;
+    height: calc((100vh - var(--gdn-header, 0px) - var(--gdn-footer, 0px)));
 }

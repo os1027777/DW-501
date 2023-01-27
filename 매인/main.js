@@ -10,7 +10,6 @@ $(document).ready(function($) {
 
 });
 
-
 const myButton = document.getElementById("jg");
 
 myButton.addEventListener('click', () => {
@@ -25,4 +24,28 @@ myButton.addEventListener('click', () => {
     td.style.backgroundColor = randomBrightColor();
   }
 });
+
+
+
+window.addEventListener('load', function() { 
+    var allElements = document.getElementsByTagName('*');
+    Array.prototype.forEach.call (allElements, function(el) {
+        var Path = el.dataset.Path;
+      if (Path) {
+          var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+              if (this.readyState == 4 && this.status == 200) {
+            el.outerHTML = this.responseText;
+              }
+          };
+          xhttp.open('GET', Path, true);
+            xhttp.send();
+        }
+    });
+});
+
+
+
+
+
 

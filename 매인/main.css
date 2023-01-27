@@ -89,8 +89,8 @@ header{
 }
 .contact{
     width: 1200px;
-    height: 500px;
     margin: 0 auto;
+    height: 600px;
 }
 .home_img{
     width: 30%;
@@ -119,7 +119,6 @@ header{
     display: flex;
     justify-content: center;
 }
-/* 임시 위드값*/
 .wid{
     width: 199px;
     height: 50px;
@@ -212,7 +211,7 @@ width: 1200px;
     color: violet;
 }
 .project1{
-    width: 100%;
+    width: 1200px;
     height: 50%;
     font-size: 30px;
 }
@@ -238,7 +237,6 @@ a {
     align-items : center;
     
 }
-/*스크롤 브드릅게*/
 html { 
     scroll-behavior: smooth; 
   } 
@@ -272,7 +270,6 @@ div{
 }
 #div5{
     width: 450px;
-    height: 700px;
     display: flex;
 }
 table{
@@ -294,13 +291,40 @@ tr{
     width: 50px;
     height: 20px;
 }
+#int1{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-right: 1%;
+    text-align: center;
 
-/* 반응형 */
+}
+#int2{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-right: 1%;
+    text-align: center;
+}
+#sel1{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+}
+.inst{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+}
+
 @media all and (max-width:1000px ) {
     .skill{
         display: block;
         height: auto;
         width: auto;
+        
     }
     .dor1{
         min-height: 0;
@@ -320,7 +344,10 @@ tr{
         width: 100%;
         height: 100%;
     }
-    hr{
+    .hr{
+        width: 100%;
+    }
+    .project{
         width: 100%;
     }
     .project1{
@@ -328,6 +355,10 @@ tr{
     }
     .project2{
         width: 100%;
+    }
+    .contact{
+        width: 100%;
+        display: flow-root;
     }
     .home{
         width: 100%;
@@ -344,7 +375,27 @@ tr{
         width: 40%;
         height: 30%;
     }
+    .header{
+        display: none;
+    }
+    #div5{
+        display: flow-root;
+        width: 100%;
+    }
+    .main_text{
+        width: 100%;
+    }
+    .hom{
+        width: 280px;
+        margin: 0 auto;
+        padding: 5%;
+    }
+    .home_img{
+        width: 50%;
+        height: auto;
+    }
+
 }
 @media all and (max-width:700px ){
-
+    
 }

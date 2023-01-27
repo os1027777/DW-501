@@ -7,7 +7,7 @@ body{
 div {
     position: relative;
     animation-name: cat;
-    animation-duration: 52232s;
+    animation-duration: 180s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -18,10 +18,12 @@ div {
   h3{
     border: solid;
         margin: auto;
-        padding: 1%;
+        padding: 15%;
         color: black;
         margin: 0 auto;
-        width: 120px;
+        width: 210px;
+        text-decoration: none;
+        font-size: 30px;
       }
   @keyframes cat {
     0%   {left:0px; top:0px;}
@@ -50,15 +52,15 @@ div {
 
     .jb {
         box-sizing: border-box;
-        width: 120px;
+        width: 210px;
         height: 64px;
         margin: 10px 0px;
         background-color: black;
         border-radius: 100%;
-        transition: all ease 2s 0s;
+   
     }
     input:checked ~ .jb {
-        width: 130px;
+        width: 280px;
         height: auto;
         border-radius: 0;
         background-color: white;
